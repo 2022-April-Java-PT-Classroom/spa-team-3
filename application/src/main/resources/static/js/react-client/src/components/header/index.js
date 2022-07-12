@@ -14,6 +14,6 @@ const Header =()=> {
                 <NavLink to={'/about'}>About</NavLink>
             </ul>
         </div>
-    )
+    );
 }
 export default Header;
