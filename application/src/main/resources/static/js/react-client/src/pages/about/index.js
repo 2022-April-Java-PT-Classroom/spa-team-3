@@ -39,9 +39,7 @@ const AboutScreen = () => {
             <a href="https://www.linkedin.com/in/hakan-celik-84818347/">LinkedIn</a>
             <br></br>
             <a>Github</a>
-            <br></br>
-            
-
+            <br></br?
         </div>
      );
 }

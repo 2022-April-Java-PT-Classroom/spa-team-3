@@ -3,15 +3,15 @@ import { NavLink } from "react-router-dom";
 import style from "./style.module.scss"
 
 const Header =()=> {
-    return(
+    return (
         <div className="style.header">
-            <h1>Web Page Name Here!</h1>
+            <h1>Jac's Mystery Educator</h1>
             <ul className={style.navList}>
                 <NavLink to={'/'}>Home</NavLink>
-                <br></br>
                 <NavLink to={'/contact'}>Contact</NavLink>
-                <br></br>
                 <NavLink to={'/about'}>About</NavLink>
+                <NavLink to={'/nasa'}>Nasa</NavLink>
+                <NavLink to={'/art'}>Art</NavLink>
             </ul>
         </div>
     );
