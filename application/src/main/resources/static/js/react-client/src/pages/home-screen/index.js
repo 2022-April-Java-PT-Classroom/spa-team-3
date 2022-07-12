@@ -1,6 +1,7 @@
 import React from "react";
 import style from './style.module.scss';
 
+
 const HomeScreen =()=>{
     return(<div>
         <div className="nasa">
@@ -15,6 +16,7 @@ const HomeScreen =()=>{
       </div>
     </div>
     );
+
 
 }
 export default HomeScreen;
