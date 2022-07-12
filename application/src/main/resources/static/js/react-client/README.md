@@ -1,7 +1,8 @@
 filled out the header, with links to 'home,' 'about', and 'contact' pages.
 filled out some styling to get the links to the right, give them borders and hover colors
 created an scss style folder for the main app and index files
-put imports into the main app and index files
+put imports into the main app and index files hello
+
 
 # Testing branch
 
