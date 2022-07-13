@@ -1,8 +1,8 @@
 import React from "react";
 import style from './style.module.scss';
 
-const HomeScreen = () => {
-    return (<div>
+const HomeScreen =()=>{
+    return(<div>
         <div className="nasa">
             <button type="onclick" id="space">Nasa</button>
         </div>
