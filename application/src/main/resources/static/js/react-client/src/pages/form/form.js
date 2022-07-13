@@ -10,7 +10,7 @@ const FormPage = () => {
            <input type='text' required id='first-name' />
           </div>
           <div className={style.control}>
-           <lable htmlFor='last-name'>Last Name </lable>
+           <label htmlFor='last-name'>Last Name </label>
            <input type='text' required id='last-name'/>
           </div>
           <div className={style.control}>
