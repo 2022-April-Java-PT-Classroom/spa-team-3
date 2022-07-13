@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
-import { Axios } from "axios";
+import Axios from "axios";
+import PlanetsImages from "../../components/planets-images";
 import style from "./style.module.scss"
 
 const Nasa = () => {
@@ -10,7 +11,7 @@ const Nasa = () => {
     useEffect(() =>{
         const fetchData = async () =>{
             const result = await Axios("https://images-api.nasa.gov/search?q=solarsystem");
-            consolog.log(result.data);
+            console.log(result.data);
             setImages(result.data.collection.items);
     };
     if(images){
