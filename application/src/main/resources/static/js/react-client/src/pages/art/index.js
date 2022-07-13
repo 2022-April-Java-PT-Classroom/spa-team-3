@@ -14,7 +14,9 @@ const Art = () => {
     //     }
     // }, []);
 
-    fetch("https://collectionapi.metmuseum.org/public/collection/v1/objects/42332")
+    const numId = 205
+
+    fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${numId}`)
     .then(response => response.json())
     .then(jsonData => {
         const title = jsonData.title;
