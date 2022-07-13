@@ -7,15 +7,13 @@ import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
   return (
-    <div>
+    <div className={style.page}>
       <BrowserRouter>
       <Header />
-      <div className={style.page} >
-        <AppRouter />
-      </div>
+      <AppRouter />
       <Footer />
       </BrowserRouter>
-      </div>
+    </div>
   );
 }
 

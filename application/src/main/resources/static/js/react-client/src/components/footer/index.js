@@ -3,7 +3,7 @@ import style from './style.module.scss';
 
 const Footer =()=>{
     return(
-            <div className="style.footer">
+            <div className={style.footer}>
                 <small> &copy; Jac's 2022 </small>
                 <ul className={style.footList}>
                    <li> Jac's</li> 
@@ -11,6 +11,5 @@ const Footer =()=>{
                 </ul>
             </div>
         )
-   
 }
 export default Footer;

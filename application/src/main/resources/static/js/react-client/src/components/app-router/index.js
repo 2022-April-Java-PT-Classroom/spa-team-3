@@ -3,7 +3,6 @@ import {Route, Switch} from 'react-router-dom';
 import HomeScreen from "../../pages/home-screen";
 import AboutScreen from "../../pages/about";
 import ContactScreen from "../../pages/contact-screen";
-import About from "../../pages/about";
 import Art from "../../pages/art";
 import Nasa from "../../pages/nasa";
 
