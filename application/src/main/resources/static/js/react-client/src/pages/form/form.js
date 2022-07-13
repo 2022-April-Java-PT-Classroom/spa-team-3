@@ -27,12 +27,7 @@ const FormPage = () => {
           </div>
           <div className={style.actions}>
               <button>submit</button>
-
-
           </div>
-        
-
-
          </form>
         </div>
     );
