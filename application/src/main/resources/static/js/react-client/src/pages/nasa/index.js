@@ -10,7 +10,7 @@ const Nasa = () => {
 
     useEffect(() =>{
         const fetchData = async () =>{
-            const result = await Axios("https://images-api.nasa.gov/search?q=planets");
+            const result = await Axios( "https://images-api.nasa.gov/search?q=solarsystem&description");
             console.log(result.data);
             setImages(result.data.collection.items);
     };
@@ -24,14 +24,14 @@ const Nasa = () => {
     return ()=> clearTimeout(timer);
     },[images]);  
     
-    
+   
     
      return (
         <div>
            
             <section className="{style.heroSection}">
             <div className="{style.heroGridText}"> 
-                {loading ? <h3> Loading ...</h3> : <SolarImages images={images} />}
+                {loading ? <h3 className={style.css}> Loading ...</h3> : <SolarImages images={images} />}
                
                 </div>
             </section> 
