@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito:wght@400;700;900&display=swap');
+
+// HERO SECTION ===========================================
+
+.heroSection {
+    width: 100%;
+    height: 100vh;
+    // background-image: url("../../assets/bkgrkid.png");
+    background-size: cover;
+    background-color: #88E457;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.heroGridImg{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroGridImg img {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+.heroGridText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: "Nunito", sans-serif;
+}
+
+.heroGridText h1 {
+    font-size: 3rem;
+    margin: 5px;
+}
+
+.heroGridText h2 {
+    font-size: 2rem;
+    margin: 5px;
+}
+
+.heroGridText h3 {
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+.heroGridText a {
+    font-size: 2rem;
+    margin: 10px auto;
+    padding: 30px 60px;
+    border-radius: 50px;
+    background-color: #1E4199;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.heroGridText a:hover {
+    background-color: #3361D7;
+}
