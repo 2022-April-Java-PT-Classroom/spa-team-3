@@ -2,10 +2,30 @@ body{
     background-image: url(\assets\bkgrkid.png);
     padding: 0;
 }
-
-space{
-    background-size: 500px;
-    border-radius: 50%;
-    height: 500px;
+.nasa{
+    height: 100px;
     width: 500px;
+    border-radius: 50%;
+    max-width: 100px;
+    margin-left:1000px;
+    margin-top: 30em;
+    ;
+
 }
+.spaceP{
+    text-align: center;
+    margin-left: 50em;
+}
+.art {
+    height: 100px;
+    width: 500px;
+    border-radius: 50%;
+    max-width: 100px;
+    padding:  50px;
+    margin-right:50em;
+    margin-bottom: 55em;
+}
+
+
+
+
