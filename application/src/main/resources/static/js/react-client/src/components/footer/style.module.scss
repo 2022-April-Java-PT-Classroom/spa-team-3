@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito:wght@400;700;900&display=swap');
+
+.footer {
+    font-family: "Lato", sans-serif;
+    color: white;
+    overflow: hidden;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    background-color: #12265A;
+}
+
+.footContainer {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+.footContainer h4 {
+    font-family: "Nunito", sans-serif;
+    margin: 10px auto;
+}
+
+.footList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footList li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+.footList li a {
+    color: white;
+}

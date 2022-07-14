@@ -55,12 +55,7 @@ function submitController(event) {
           </div>
           <div className={style.actions}>
               <button>submit</button>
-
-
           </div>
-        
-
-
          </form>
         </div>
     );
