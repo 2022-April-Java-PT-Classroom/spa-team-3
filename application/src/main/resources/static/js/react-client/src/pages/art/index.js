@@ -19,24 +19,35 @@ const Art = () => {
     fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${numId}`)
     .then(response => response.json())
     .then(jsonData => {
+
         const title = jsonData.title;
         const artist = jsonData.artistDisplayName;
         const department = jsonData.department;
         const image = jsonData.primaryImage;
+        const medium = jsonData.medium;
+        const dateBegin = jsonData.objectBeginDate;
+        const dateEnd = jsonData.objectEndDate;
 
-        console.log(title);
-        console.log(artist);
-        console.log(department);
+        // console.log(title);
+        // console.log(artist);
+        // console.log(department);
 
         const artTitle = document.querySelector("#title");
         const artArtist = document.querySelector("#artist");
         const artDepartment = document.querySelector("#department");
         const artImage = document.querySelector("#image");
+        const artMedium = document.querySelector("#medium");
+        const artBegin = document.querySelector("#begin");
+        const artEnd = document.querySelector("#end");
 
-        artTitle.innerText = title;
-        artArtist.innerText = artist;
-        artDepartment.innerText = department;
+
+        artTitle.innerText = "Title: " + title;
+        artArtist.innerText = "Artist: " + artist;
+        artDepartment.innerText = "Department: " + department;
         artImage.src = image;
+        artMedium.innerText = "Medium: " + medium;
+        artBegin.innerText = dateBegin;
+        artEnd.innerText = dateEnd;
     })
     .catch(err => console.log(err));
 
@@ -54,13 +65,20 @@ const Art = () => {
 
     return ( 
         <div>
-            <h2>ART PAGE</h2> 
-            <section id="art-section">
-                <p id="title">title</p>
-                <p id="artist">artist</p>
-                <p id="department">department</p>
-                <img id="image" src="" width="30%"></img>
-            </section>
+
+            <section className={style.heroSection}>
+                <div className={style.heroGridText}>
+                    <h1 id="title">Name</h1>
+                    <h2 id="artist">Artist</h2>
+                    <h2 id="department">Department</h2>
+                    <h3 id="medium">Medium</h3>
+                    <h3>Date: <span id="begin">Begin</span>-<span id="end">End</span></h3>
+                    <a href="#">More Art</a>
+                </div>
+                <div className={style.heroGridImg}>
+                <img id="image"></img>
+                </div>
+         </section>
         </div>
     );
 }
