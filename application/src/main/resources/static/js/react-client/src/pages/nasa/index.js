@@ -4,6 +4,7 @@ import Axios from "axios";
 import PlanetsImages from "../../components/planets-images";
 import style from "./style.module.scss"
 
+
 const Nasa = () => {
     const [images,setImages] = useState(null);
     const[loading,setLoading]=useState(true);
@@ -26,10 +27,13 @@ const Nasa = () => {
     
      return (
         <div>
+             
             <h2>NASA PAGE</h2>
             <section>
                 {loading ? <h3> Loading ...</h3> : <PlanetsImages images={images} />}
             </section>
+           
+           
         </div>
     );
 };

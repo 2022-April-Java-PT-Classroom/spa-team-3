@@ -392,6 +392,7 @@ const Art = () => {
     console.log(artSingle);
 
     fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${artSingle}`)
+
     .then(response => response.json())
     .then(jsonData => {
 
@@ -402,10 +403,6 @@ const Art = () => {
         const medium = jsonData.medium;
         const dateBegin = jsonData.objectBeginDate;
         const dateEnd = jsonData.objectEndDate;
-
-        // console.log(title);
-        // console.log(artist);
-        // console.log(department);
 
         const artTitle = document.querySelector("#title");
         const artArtist = document.querySelector("#artist");

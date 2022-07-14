@@ -1,0 +1,71 @@
+
+
+.team .title h5{
+    
+    margin:0;
+    font-size:50px;
+    font-style: bold;
+    
+}
+ .team h2{
+    text-align:center;
+    color:#551a8b;
+    
+ }
+ .team h2 hr{
+    width:15%;
+    border-top:2px solid #000;
+    background-color:transparent;
+    border-bottom:none;
+    margin-bottom:10px;
+ }
+
+ .team .card{
+    //padding-bottom:20px;
+    //padding-top:20px;
+    border-radius: 5%;
+    position:relative;
+    min-width:30%;
+    height:400px !important;
+    //height:auto;
+    background-color:#fff;
+    display:inline-block;
+    margin:20px 1%;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+    text-align:center;
+    //align-items: baseline;
+    padding:initial;
+ }
+ .card .container{
+    position:relative;
+    background-color:greenyellow;
+    width:250px;
+    height:250px;
+    border:none;
+    border-radius:25%;
+    margin:auto;
+    color:#fff;
+    
+ }
+ 
+ .container h1{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    margin:0;
+    font-size:60px;
+ }
+ 
+ .team .card h2{
+    text-align:center;
+    margin:30px 0 0 0;
+ }
+ .team .card h4{
+    text-align:center;
+    margin:10px 0 0 0;
+ }
+ .Img{
+    border-radius: 50%;
+    align-items: center;
+ }
