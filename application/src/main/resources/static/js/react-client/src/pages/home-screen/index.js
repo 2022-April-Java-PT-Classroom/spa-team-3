@@ -7,7 +7,11 @@ const HomeScreen =()=>{
             <button type="onclick" id="space">Nasa</button>
         </div>
         <div className="spaceP">
-            <p>Let's explore all the planets and space with Nasa</p>
+            <p>There are more planets than stars in our galaxy. The current count orbiting our star: eight.
+
+The inner, rocky planets are Mercury, Venus, Earth, and Mars. The outer planets are gas giants Jupiter and Saturn and ice giants Uranus and Neptune.
+
+Beyond Neptune, a newer class of smaller worlds called dwarf planets reign, including longtime favorite Pluto. Thousands more planets have been discovered beyond our solar system. Scientists call them exoplanets (exo means "from outside").</p>
         </div>
 
 
