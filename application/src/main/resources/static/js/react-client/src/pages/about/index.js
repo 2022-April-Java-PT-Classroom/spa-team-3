@@ -1,8 +1,8 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const AboutScreen = () => {
     return (
-    
         <div>
             <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEOcd8Of0HR6A/profile-displayphoto-shrink_200_200/0/1650207672594?e=1663200000&v=beta&t=hPZrEEgpWwJFE5xtqLYDB4oWsngmDx-486EkNOW2Dvo" alt="chadpic"></img>
             <h2>Chad Zimmerman</h2>
@@ -26,7 +26,7 @@ const AboutScreen = () => {
             <h2>Zibad Maldaye</h2>
             <a href="https://www.linkedin.com/in/zibad/">LinkedIn</a>
             <br></br>
-            <a>Github</a>
+            <a href="https://github.com/zibadcoder">Github</a>
             <br></br>
             <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEOL17F7WcdHQ/profile-displayphoto-shrink_200_200/0/1648218389063?e=1663200000&v=beta&t=tErh_GGAq1KW0Wy3w6mOao5CeauDSt9OCD2wvcK6IVE" alt="pennypic"></img>
             <h2>Penny Schuenke</h2>
@@ -40,7 +40,7 @@ const AboutScreen = () => {
             <br></br>
             <a>Github</a>
             <br></br>
-        </div>
-     );
+          </div> 
+    );
 }
 export default AboutScreen;
