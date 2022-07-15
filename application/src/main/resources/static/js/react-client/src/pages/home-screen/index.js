@@ -1,18 +1,20 @@
 import React from "react";
-import style from './style.module.scss';
-import planets from '../../assets/Planets.svg';
 import art from '../../assets/art-supplies.svg';
 import kids from '../../assets/kids.svg';
+import planets from '../../assets/Planets.svg';
+import style from './style.module.scss';
 
 const HomeScreen =()=>{
     return(
     <div>
+
 
       <section className={style.heroSection}>
         <div className={style.heroGridText}>
           <h1>Welcome To JAC</h1>
           <h2>Mystery Educator Learning</h2>
           <a href="/about">About Us</a>
+
         </div>
         <div className={style.heroGridImg}>
           <img src={kids}></img>

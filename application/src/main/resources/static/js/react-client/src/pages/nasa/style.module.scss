@@ -1,0 +1,9 @@
+.heroSection{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-image: url(../../assets/nasabkg.png);
+}

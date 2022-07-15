@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 import Axios from "axios";
-import PlanetsImages from "../../components/planets-images";
+import SolarImages from "../../components/solar-images";
 import style from "./style.module.scss"
-
 
 const Nasa = () => {
     const [images,setImages] = useState(null);
@@ -11,7 +10,7 @@ const Nasa = () => {
 
     useEffect(() =>{
         const fetchData = async () =>{
-            const result = await Axios("https://images-api.nasa.gov/search?q=solarsystem");
+            const result = await Axios( "https://images-api.nasa.gov/search?q=solarsystem&description");
             console.log(result.data);
             setImages(result.data.collection.items);
     };
@@ -23,19 +22,21 @@ const Nasa = () => {
 
     } ,1000);
     return ()=> clearTimeout(timer);
-    },[images]);   
+    },[images]);  
+    
+   
     
      return (
         <div>
-             
-            <h2>NASA PAGE</h2>
-            <section>
-                {loading ? <h3> Loading ...</h3> : <PlanetsImages images={images} />}
-            </section>
            
-           
+            <section className="{style.heroSection}">
+            <div className="{style.heroGridText}"> 
+                {loading ? <h3 className={style.css}> Loading ...</h3> : <SolarImages images={images} />}
+               
+                </div>
+            </section> 
         </div>
     );
-};
 
+}
 export default Nasa;
