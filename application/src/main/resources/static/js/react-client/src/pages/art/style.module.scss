@@ -33,8 +33,9 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
+    margin: auto;
+    padding: 0 30px;
     color: white;
     font-family: "Nunito", sans-serif;
 }
@@ -55,11 +56,11 @@
 }
 
 .heroGridText a {
-    font-size: 2rem;
     margin: 10px auto;
     padding: 30px 60px;
     border-radius: 50px;
     background-color: #1E4199;
+    font-size: 2rem;
     color: white;
     font-family: "Nunito", sans-serif;
     font-weight: 900;
