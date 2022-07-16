@@ -29,10 +29,10 @@ const Nasa = () => {
      return (
         <div>
            
-            <section className="{style.heroSection}">
-            <div className="{style.heroGridText}"> 
-                {loading ? <h3 className={style.css}> Loading ...</h3> : <SolarImages images={images} />}
-               
+            <section className={style.heroSection}>
+            <div className={style.heroGridText}> 
+                {loading ? <h3 className={style.heroGridImg}> Loading ...</h3> : <SolarImages images={images} />}
+                {/* {loading ? <h3 className={style.heroGridText}>Loading ...</h3> : <SolarImages titles={image.data.titles} />} */}
                 </div>
             </section> 
         </div>
