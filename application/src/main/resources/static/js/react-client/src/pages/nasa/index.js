@@ -29,6 +29,12 @@ const Nasa = () => {
     return ()=> clearTimeout(timer);
     },[images]);  
     
+    // const nasalink = document.querySelector('#nasalink');
+    
+
+    // function nasalink (){
+    //     nasalink.innerHTML = URL"https://www.nasa.gov/';
+    // }
       
      return (
         <div>
