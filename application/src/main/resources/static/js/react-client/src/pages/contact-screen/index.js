@@ -12,6 +12,7 @@ const ContactScreen = ()=>{
   }
   return (
     <div>
+      <a href="https://github.com/cljenkinsjr/jackr-enterprises-site">JAC Enterprises</a><p>We are an organization that specializes in offering niche adventures dedicated to learning about Earth's various ecosystems and unique terrains. Our motto is, "Vincit Qui Se Vincit" which means, "He/she conquers who conquers him/herself."</p>
       <h2 className={style.header}>Contact Us</h2>
       <FormPage onEnteringComment={addContacInfo}/>
     </div>
