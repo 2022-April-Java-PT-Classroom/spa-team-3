@@ -31,8 +31,9 @@ const Nasa = () => {
            
             <section className={style.heroSection}>
             <div className={style.heroGridText}> 
-                {loading ? <h3 className={style.heroGridImg}> Loading ...</h3> : <SolarImages images={images} />}
+            {loading ? <h3 className={style.heroGridImg}> Loading ...</h3> : <SolarImages images={images} />}
                 {/* {loading ? <h3 className={style.heroGridText}>Loading ...</h3> : <SolarImages titles={image.data.titles} />} */}
+               
                 </div>
             </section> 
         </div>

@@ -32,6 +32,7 @@ const HomeScreen =()=>{
       </section>
 
       <section className={style.artSection}>
+        
         <div className={style.artGridText}>
           <h2>Discover Art</h2>
           <a href="/art">Get Creative!</a>
