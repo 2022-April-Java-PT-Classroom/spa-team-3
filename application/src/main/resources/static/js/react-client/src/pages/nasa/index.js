@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from "react";
 
 import Axios from "axios";
+import { Link } from "react-router-dom";
+import ShuttleImages from "../../components/shuttle-images";
 import SolarImages from "../../components/solar-images";
 import style from "./style.module.scss"
 
 const Nasa = () => {
+   
+    
     const [images,setImages] = useState(null);
     const[loading,setLoading]=useState(true);
 
@@ -13,6 +17,7 @@ const Nasa = () => {
             const result = await Axios( "https://images-api.nasa.gov/search?q=solarsystem&description");
             console.log(result.data);
             setImages(result.data.collection.items);
+
     };
     if(images){
         setLoading(false);
@@ -24,19 +29,18 @@ const Nasa = () => {
     return ()=> clearTimeout(timer);
     },[images]);  
     
-   
-    
+      
      return (
         <div>
            
             <section className={style.heroSection}>
             <div className={style.heroGridText}> 
-            {loading ? <h3 className={style.heroGridImg}> Loading ...</h3> : <SolarImages images={images} />}
-                {/* {loading ? <h3 className={style.heroGridText}>Loading ...</h3> : <SolarImages titles={image.data.titles} />} */}
-               
-                </div>
-            </section> 
+            {loading ? <h3 className={style.heroGridImg}> Loading ...</h3> : <SolarImages images={images} />} 
+                </div>   
+            </section>
+                
         </div>
+        
     );
 
 }
