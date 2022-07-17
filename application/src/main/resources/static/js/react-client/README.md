@@ -6,6 +6,8 @@ put imports into the main app and index files hello
 
 7/12/22: started the about page bios.  added linkedin and github links for those I knew.  Put linked in profile pics as placeholders.  Page needs styled still so all content fits.  
 
+testing this branch
+
 # Testing branch
 
 # Getting Started with Create React App
