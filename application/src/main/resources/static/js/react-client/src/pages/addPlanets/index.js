@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import style from './style.module.scss';
 import PlanetService from '../../components/services/index'
 import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const AddPlanet = () => {
 
@@ -10,24 +12,68 @@ const AddPlanet = () => {
     const [radius, setRadius] = useState('');
 
     const history = useHistory();
+    const {id} = useParams();
 
-    const savePlanet = (e) => {
+    const saveOrUpdatePlanet = (e) => {
         e.preventDefault();
 
         const planet = {name, description, radius}
-        PlanetService.createPlanet(planet).then((response => {
 
-            console.log(response.data)
-            history.push('/planets')
+        history.push('/planets');
 
-        })).catch(error =>{
+        if(id){
+            PlanetService.updatePlanet(id,planet).then((response) => {
+
+                
+
+
+            }).catch((error) =>{
+                console.log(error)
+            })
+
+
+        }else{
+
+            PlanetService.createPlanet(planet).then((response => {
+
+                console.log(response.data)
+                history.push('/planets')
+    
+            })).catch(error =>{
+                console.log(error);
+            })
+
+        }
+       
+    }
+
+    useEffect(() => {
+        PlanetService.getPlanetById(id).then((response => {
+            setName(response.data.name);
+            setDescription(response.data.description);
+            setRadius(response.data.radius);
+        })).catch(error => {
             console.log(error);
         })
+
+    }, []);
+
+    const title = () =>{
+        if(id){
+            return <h2>Update Planet</h2>
+        }else {
+            return <h2>Add Planet</h2>
+        }
+
     }
 
     return(
         <div>
-            <h2>Add Planet</h2>
+            
+            {title()}
+
+            
+         
             <form className={style.form}>
                 <div className={style.formContainer}>
                 <label htmlFor='name'> Name</label>
@@ -61,7 +107,8 @@ const AddPlanet = () => {
 
                 </div>
                 <div className={style.actions}>
-                    <button onClick={(e) => savePlanet(e)}>submit</button>
+                    <button onClick={(e) => saveOrUpdatePlanet(e)}>submit</button>
+                    <Link to={'/planets'} >Cancel</Link>
                 </div>
             </form>
 
