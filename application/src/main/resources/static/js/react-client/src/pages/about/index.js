@@ -3,8 +3,11 @@ import style from './style.module.scss';
 
 const AboutScreen = () => {
     return (
-      <div className={style.team}>
-          <div className={style.teamTitle}><h5>Our Team</h5></div>
+      <div>
+        <section className={style.team}>
+          <div className={style.teamTitle}>
+            <h5>Our Team</h5>
+            </div>
             <div className={style.card}>
               <h2>Noelle Gisewhite</h2>  
               <div className={style.container}> 
@@ -85,6 +88,7 @@ const AboutScreen = () => {
             <a href="https://www.linkedin.com/in/kobby-nkansah-692280218/">LinkedIn</a>
             <br></br>
             </div>
+            </section>
         </div>
      );
 }
