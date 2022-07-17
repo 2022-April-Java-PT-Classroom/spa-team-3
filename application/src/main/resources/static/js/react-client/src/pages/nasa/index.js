@@ -13,7 +13,7 @@ const Nasa = () => {
 
     useEffect(() =>{
         const fetchData = async () =>{
-            const result = await Axios( "https://images-api.nasa.gov/search?q=solarsystem&description");
+            const result = await Axios("https://images-api.nasa.gov/search?q=solarsystem&description");
             console.log(result.data);
             // console.log(result.data.collection.version);
             // console.log(result.data.collection.items[0].href);
