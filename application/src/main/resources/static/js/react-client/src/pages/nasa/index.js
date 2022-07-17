@@ -9,12 +9,15 @@ const Nasa = () => {
    
     
     const [images,setImages] = useState(null);
-    const[loading,setLoading]=useState(true);
+    const [loading,setLoading] = useState(true);
 
     useEffect(() =>{
         const fetchData = async () =>{
             const result = await Axios( "https://images-api.nasa.gov/search?q=solarsystem&description");
             console.log(result.data);
+            // console.log(result.data.collection.version);
+            // console.log(result.data.collection.items[0].href);
+            // console.log(result.data.collection.items[0].links[0].href); // Returns object image
             setImages(result.data.collection.items);
 
     };
@@ -29,17 +32,16 @@ const Nasa = () => {
     },[images]);  
     
      return (
-        <div>
-           
-            <section className={style.Section}>
-            <div className={style.Text}> 
-            {loading ? <h3 className={style.Img}> Loading ...</h3> : <SolarImages images={images} />} 
-                </div>   
+        <div className={style.nasaPage}>
+            <a id="nasa"href="https://www.nasa.gov/">Nasa</a>
+            <section className={style.nasaSection}>
+            <div className={style.nasaText}> 
+            {loading ? <h3 className={style.nasaImg}> Loading ...</h3> : <SolarImages images={images} />} 
+            {/* {loading ? <h3 className={style.nasaImg}> Loading ...</h3> : <img src={images}></img>}  */}
+            </div>   
             </section>
-                
         </div>
-        
     );
-
 }
+
 export default Nasa;

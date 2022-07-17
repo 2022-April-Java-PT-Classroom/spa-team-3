@@ -3,15 +3,12 @@ import style from './style.module.scss';
 
 const AboutScreen = () => {
     return (
-    
-        <div className={style.team}>
-            
-            <div className={style.title}><h5>Our Team</h5></div>
-            
-            <div className={style.card}>
-              <h2>Chad Zimmerman</h2>  
-              <div className={style.container}> 
-              <h1><img className={style.Img}src="https://media-exp1.licdn.com/dms/image/C4D03AQEOcd8Of0HR6A/profile-displayphoto-shrink_200_200/0/1650207672594?e=1663200000&v=beta&t=hPZrEEgpWwJFE5xtqLYDB4oWsngmDx-486EkNOW2Dvo" alt="chadpic"></img>
+      <div className={style.team}>
+          <div className={style.teamTitle}><h5>Our Team</h5></div>
+          <div className={style.card}>
+            <h2>Chad Zimmerman</h2>  
+          <div className={style.container}> 
+            <h1><img className={style.Img}src="https://media-exp1.licdn.com/dms/image/C4D03AQEOcd8Of0HR6A/profile-displayphoto-shrink_200_200/0/1650207672594?e=1663200000&v=beta&t=hPZrEEgpWwJFE5xtqLYDB4oWsngmDx-486EkNOW2Dvo" alt="chadpic"></img>
               </h1>
               </div> 
               <h4>Full Stack Developer</h4>
