@@ -67,7 +67,7 @@ const AboutScreen = () => {
             <div className={style.card}>
               <h2>Penny Schuenke</h2>  
               <div className={style.container}> 
-              <h1> <img className={style.Img} src="https://media-exp1.licdn.com/dms/image/C4D03AQEOL17F7WcdHQ/profile-displayphoto-shrink_200_200/0/1648218389063?e=1663200000&v=beta&t=tErh_GGAq1KW0Wy3w6mOao5CeauDSt9OCD2wvcK6IVE" alt="pennypic"></img>
+              <h1> <img className={style.Img} src="https://media-exp1.licdn.com/dms/image/C5603AQEts2rMqIO8nA/profile-displayphoto-shrink_800_800/0/1657918448299?e=1663804800&v=beta&t=8H7_VTX8gFKDnJtNEi7iqyqGbPllYJX6nrJi7Y5L6Ro" alt="pennypic"></img>
               </h1>
               </div> 
               <h4>Full Stack Developer</h4>

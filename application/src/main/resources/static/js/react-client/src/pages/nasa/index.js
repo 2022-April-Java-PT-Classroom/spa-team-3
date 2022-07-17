@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 
 import Axios from "axios";
 import { Link } from "react-router-dom";
-import ShuttleImages from "../../components/shuttle-images";
 import SolarImages from "../../components/solar-images";
 import style from "./style.module.scss"
 
@@ -29,19 +28,12 @@ const Nasa = () => {
     return ()=> clearTimeout(timer);
     },[images]);  
     
-    // const nasalink = document.querySelector('#nasalink');
-    
-
-    // function nasalink (){
-    //     nasalink.innerHTML = URL"https://www.nasa.gov/';
-    // }
-      
      return (
         <div>
            
-            <section className={style.heroSection}>
-            <div className={style.heroGridText}> 
-            {loading ? <h3 className={style.heroGridImg}> Loading ...</h3> : <SolarImages images={images} />} 
+            <section className={style.Section}>
+            <div className={style.Text}> 
+            {loading ? <h3 className={style.Img}> Loading ...</h3> : <SolarImages images={images} />} 
                 </div>   
             </section>
                 
