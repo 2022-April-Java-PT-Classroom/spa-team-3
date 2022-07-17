@@ -1,18 +1,17 @@
 
 
-.team .title h5{
-    
+.teamTitle {
     margin:0;
     font-size:50px;
     font-style: bold;
-    
 }
+
  .team h2{
     text-align:center;
     color:#551a8b;
-    
  }
- .team h2 hr{
+
+ .team h2 hr {
     width:15%;
     border-top:2px solid #000;
     background-color:transparent;
@@ -36,10 +35,10 @@
     //align-items: baseline;
     padding:initial;
  }
- .card .container{
+ 
+ .team .card .container{
     position:relative;
-    background-color:greenyellow;
-    width:250px;
+  
     height:250px;
     border:none;
     border-radius:25%;
@@ -48,7 +47,7 @@
     
  }
  
- .container h1{
+ .team .container h1{
     position:absolute;
     top:50%;
     left:50%;
@@ -65,7 +64,9 @@
     text-align:center;
     margin:10px 0 0 0;
  }
- .Img{
+ .team .Img {
+   width: 100%;
+   height: 100%;
     border-radius: 50%;
     align-items: center;
  }
