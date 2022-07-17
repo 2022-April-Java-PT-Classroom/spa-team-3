@@ -1,8 +1,16 @@
-import React, { useState }  from "react";
+import React, { useEffect, useState }  from "react";
 import style from  './style.module.scss';
+import PlanetService from '../../components/services/index'
 
 const Planet = () => {
     const [planets, setPlanets] =useState([]);
+    useEffect(() => {
+        PlanetService.getAllPlanets().then((response => {
+            setPlanets(response.data);
+        })).catch(error => console.log(error))
+            
+
+    }, []);
 
     return (
 
@@ -21,14 +29,14 @@ const Planet = () => {
                 </thead>
                 <tbody>
                     {
-                        planets.map(planet => {
+                        planets.map(planet => 
                             <tr key={planet.id}>
                                 <td>{planet.id}</td>
                                 <td>{planet.name}</td>
                                 <td>{planet.description}</td>
                                 <td>{planet.radius}</td>
                             </tr>
-                        })
+                        )
                     }
                 </tbody>
             </table>

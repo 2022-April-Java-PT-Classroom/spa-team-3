@@ -9,8 +9,9 @@
 
 }
 .tableContent {
+    
     border-collapse: collapse;
-    margin: 25px 0;
+    margin: 30px auto;
     font-size: 0.9em;
     min-width: 500px;
     margin-left: 18px;
@@ -18,24 +19,44 @@
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0,0,0, 0.15);
 
-  &th,tr{
+    & thead{
     
-        background-color: #009879;
+      background-color: #009879;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+      
+      
+     
+
+      &tr, th {
+
+
         color: #ffffff;
+        
         text-align: left;
         font-weight: bold;
         
+       
+  
+      }
+
+      &tbody,tr{
+        border-bottom: 1px solid white;
+      }
+      
+      
     
     
-  }
-  &th,td{
-      padding: 13px 16px;
-  }
-  &tbody,tr{
-      border-bottom: 1px solid #dddddd;
-  }
+    }
+
+  
+  
+ 
+ 
 
     
     
 }
+
     

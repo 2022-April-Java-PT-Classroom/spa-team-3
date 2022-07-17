@@ -38,14 +38,14 @@ public class Planet {
     public String getRadius() {
         return radius;
     }
-
-//    @Override
-//    public String toString() {
-//        return "Planet{" +
-//                "id=" + id +
-//                ", name='" + name + '\'' +
-//                ", description='" + description + '\'' +
-//                ", radius='" + radius + '\'' +
-//                '}';
-//    }
+//
+  @Override
+  public String toString() {
+      return "Planet{" +
+            "id=" + id +
+              ", name='" + name + '\'' +
+              ", description='" + description + '\'' +
+             ", radius='" + radius + '\'' +
+              '}';
+  }
 }
