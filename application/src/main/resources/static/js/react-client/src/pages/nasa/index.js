@@ -33,7 +33,7 @@ const Nasa = () => {
     
      return (
         <div className={style.nasaPage}>
-            <a id="nasa"href="https://www.nasa.gov/">Nasa</a>
+            <a id="nasa"href="https://www.nasa.gov/">Nasa Website </a>
             <section className={style.nasaSection}>
             <div className={style.nasaText}> 
             {loading ? <h3 className={style.nasaImg}> Loading ...</h3> : <SolarImages images={images} />} 

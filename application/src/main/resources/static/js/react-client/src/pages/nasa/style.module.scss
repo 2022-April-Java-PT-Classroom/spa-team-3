@@ -5,10 +5,12 @@
     height: 100%;
     background-size: cover;
     display: grid;
-    border: 2px solid rgb(6, 158, 26);
+    
 }
 
 .nasaText {
+    padding-top: 25px;
+    padding-left: 35px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -21,6 +23,9 @@
 }
 
 .nasaPage img {
+   
+    // border-style:solid;
+    // border-color: #f10a0a;
     float: left;
     justify-content: right;
     border-radius: 50%;
@@ -29,12 +34,25 @@
     margin: right;
 }
 
+
+
+
+
+
+
 .nasaPage a {  
     justify-content: right;
-    border: 10px solid red;
     margin: auto;
-    font-size: larger;
-    color: rgb(247, 9, 9);
+    font-size: 35px;
+    color:rgb(3, 133, 247);
 }
+.nasaPage a:hover{
+    width: 520px;
+    height: 50px;
+    color: rgb(252, 8, 8);
+    background: rgb(10, 10, 10);
+    transition: 1.5s;
+}
+
 
 
