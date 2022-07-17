@@ -16,6 +16,7 @@ const Planet = () => {
 
         <div className= {style.container} >
             <h2>List of Planets</h2>
+            <button className={style.actions}><a href="/add-planet">Add Planet</a></button>
             <div >
             <table className={style.tableContent}>
                 <thead>
