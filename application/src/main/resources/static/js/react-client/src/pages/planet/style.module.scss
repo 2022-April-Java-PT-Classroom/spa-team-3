@@ -1,0 +1,41 @@
+.container {
+     margin-bottom: 0.5rem;
+     
+     height: 1000px;
+     width: auto;
+     text-align: center;
+
+    
+
+}
+.tableContent {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 500px;
+    margin-left: 18px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0, 0.15);
+
+  &th,tr{
+    
+        background-color: #009879;
+        color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+        
+    
+    
+  }
+  &th,td{
+      padding: 13px 16px;
+  }
+  &tbody,tr{
+      border-bottom: 1px solid #dddddd;
+  }
+
+    
+    
+}
+    
