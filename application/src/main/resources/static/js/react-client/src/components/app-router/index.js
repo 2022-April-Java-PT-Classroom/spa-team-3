@@ -5,6 +5,10 @@ import AboutScreen from "../../pages/about";
 import ContactScreen from "../../pages/contact-screen";
 import Art from "../../pages/art";
 import Nasa from "../../pages/nasa";
+import Planet from '../../pages/planet/planet';
+import AddPlanet from '../../pages/addPlanets/index'
+
+
 
 const AppRouter = () => {
     return (
@@ -15,6 +19,9 @@ const AppRouter = () => {
             <Route exact path={'/about'} component={AboutScreen} />
             <Route exact path={'/nasa'} component={Nasa} />
             <Route exact path={'/art'} component={Art} />
+            <Route path={'/planets'} component={Planet} />
+            <Route  path={'/add-planet'} component={AddPlanet} />
+            <Route   path={"/edit-planet/:id"} component={AddPlanet} />
         </Switch>
         
     );
