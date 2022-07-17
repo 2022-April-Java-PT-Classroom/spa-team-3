@@ -14,7 +14,7 @@
  .team h2 hr {
     width:15%;
     border-top:2px solid #000;
-    background-color:transparent;
+    background-color:blue;
     border-bottom:none;
     margin-bottom:10px;
  }
@@ -69,4 +69,16 @@
    height: 100%;
     border-radius: 50%;
     align-items: center;
+ }
+.team a{
+   font: bold 10px Nunito;
+   border-radius: 10%;
+   text-decoration: none;
+   background-color: #EEEEEE;
+   color: #6653d1;
+   padding: 2px 6px 2px 6px;
+   border-top: 1px solid #CCCCCC;
+   border-right: 1px solid #333333;
+   border-bottom: 1px solid #333333;
+   border-left: 1px solid #CCCCCC;
  }
