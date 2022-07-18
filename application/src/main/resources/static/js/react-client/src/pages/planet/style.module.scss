@@ -1,4 +1,4 @@
-.container {
+.planetContainer {
      margin-bottom: 0.5rem;
      
      height: 1000px;
@@ -9,11 +9,9 @@
       margin-top: 1rem;
       text-align: left;
     }
-    
-
 }
 
-.tableContent {
+.planetTableContent {
     
     border-collapse: collapse;
     margin: 30px auto;
@@ -24,44 +22,21 @@
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0,0,0, 0.15);
 
-    
-
-    & thead{
+    & thead {
     
       background-color: #009879;
       color: #ffffff;
       text-align: left;
       font-weight: bold;
-      
-      
-     
 
       &tr, th {
-
-
         color: #ffffff;
-        
         text-align: left;
         font-weight: bold;
-        
-       
-  
       }
 
       &tbody,tr{
         border-bottom: 1px solid white;
       }
-      
-      
-    
-    
     }
-
-  
-  
- 
- 
-
-    
-    
 }

@@ -1,12 +1,12 @@
-package org.wecancodeit.controller;
+package org.wecancodeit.serverside.controller;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.wecancodeit.exception.ResourceNotFoundException;
-import org.wecancodeit.model.Planet;
-import org.wecancodeit.repository.PlanetRepository;
+import org.wecancodeit.serverside.exception.ResourceNotFoundException;
+import org.wecancodeit.serverside.model.Planet;
+import org.wecancodeit.serverside.repository.PlanetRepository;
 
 import javax.annotation.Resource;
 import java.util.Collection;
