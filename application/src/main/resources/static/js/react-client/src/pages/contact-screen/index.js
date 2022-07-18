@@ -26,7 +26,7 @@ const ContactScreen = ()=>{
 
       <section className={style.aboutFormSection}>
         <div className={style.aboutFormContain}>
-        <h2>Contact JAC</h2>
+        <h2 className={style.aboutFormContainH2}>Contact JAC</h2>
         <FormPage onEnteringComment={addContacInfo}/>
         </div>
       </section>
