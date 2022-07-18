@@ -1,4 +1,4 @@
-package org.wecancodeit.serverside.model;
+package org.wecancodeit.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -38,8 +38,20 @@ public class Planet {
     public String getRadius() {
         return radius;
     }
-//
-  @Override
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setRadius(String radius) {
+        this.radius = radius;
+    }
+
+    @Override
   public String toString() {
       return "Planet{" +
             "id=" + id +
