@@ -1,5 +1,4 @@
 import React from "react";
-import { getByTitle } from "@testing-library/react";
 
 const SolarImages=({ images})=>{
     return images.map((image,index)=>{
