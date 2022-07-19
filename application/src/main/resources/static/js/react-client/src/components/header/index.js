@@ -15,7 +15,7 @@ const Header =()=> {
                 <NavLink to={'/art'}>Art</NavLink>
                 <NavLink to={'/planets'}>Planets</NavLink>
                 <NavLink to={'/create'}>Create</NavLink>
-                <NavLink to={'/draw'}>Planets</NavLink>
+                <NavLink to={'/draw'}>Draw</NavLink>
             </ul>
             </div>
         </div>
