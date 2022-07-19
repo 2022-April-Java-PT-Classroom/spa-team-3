@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import PlanetService from '../../components/planet-service/index';
 import style from './style.module.scss';
+import PlanetService from '../../components/planet-service/index';
+
 import { useHistory } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
@@ -20,12 +22,13 @@ const AddPlanet = () => {
 
         const planet = {name, description, radius}
 
-        history.push('/planets');
+        history.replace('/planets')
 
         if(id){
             PlanetService.updatePlanet(id,planet).then((response) => {
+                console.log(response);
 
-                
+                history.push('/planets')
 
 
             }).catch((error) =>{
@@ -37,14 +40,23 @@ const AddPlanet = () => {
 
             PlanetService.createPlanet(planet).then((response => {
 
-                console.log(response.data)
                 history.push('/planets')
+
+                console.log(response.data)
+                
+                
     
             })).catch(error =>{
                 console.log(error);
             })
 
         }
+
+        
+
+       
+        
+
        
     }
 
@@ -108,7 +120,11 @@ const AddPlanet = () => {
 
                 </div>
                 <div className={style.actions}>
+
+                   
                     <button onClick={(e) => saveOrUpdatePlanet(e)}>submit</button>
+
+                   
                     <Link to={'/planets'} >Cancel</Link>
                 </div>
             </form>
