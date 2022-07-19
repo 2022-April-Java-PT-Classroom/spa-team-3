@@ -1,0 +1,17 @@
+.createPage {
+    width: 100%;
+    height: 100%;
+}
+
+.createContain {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.createH3 {
+    font-size: 2rem;
+}
+
+.createImg {
+    width: 60%;
+}
