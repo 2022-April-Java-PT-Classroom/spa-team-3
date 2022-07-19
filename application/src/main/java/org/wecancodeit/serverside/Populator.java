@@ -1,4 +1,4 @@
-package org.wecancodeit;
+package org.wecancodeit.serverside;
 
 
 import org.springframework.boot.CommandLineRunner;
