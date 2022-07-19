@@ -7,8 +7,9 @@
 }
 
 .nasaText {
+    grid-row: repeat(3,1frv);
     padding-top: 25px;
-    padding-left: 35px;
+    padding-left: 45px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -26,10 +27,11 @@
     // border-color: #f10a0a;
     float: left;
     justify-content: right;
-    border-radius: 50%;
-    max-width: 50%;
-    max-height: 50%;
+    border-radius: 100%;
+    max-width: 400px;
+    max-height: 400px;
     margin: right;
+    padding-left: 20px;
 }
 
 

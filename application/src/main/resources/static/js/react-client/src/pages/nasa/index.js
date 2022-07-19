@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Axios from "axios";
 import { Link } from "react-router-dom";
 import SolarImages from "../../components/solar-images";
-import style from "./style.module.scss"
+import style from "./nasastyle.module.scss"
 
 const Nasa = () => {
    
