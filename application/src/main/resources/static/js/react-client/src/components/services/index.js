@@ -18,5 +18,8 @@ class PlanetService {
         axios.put(URL_END_POINT + '/' + planetId, planet);
 
     }
+    deletePlanet(planetId){
+        axios.delete(URL_END_POINT +'/' + planetId);
+    }
 }
 export default new PlanetService();
