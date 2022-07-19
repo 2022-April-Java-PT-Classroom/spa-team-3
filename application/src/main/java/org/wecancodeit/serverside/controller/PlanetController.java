@@ -37,7 +37,8 @@ public class PlanetController {
         if (planetToAdd.isEmpty()) {
             Planet addedPlanet = new Planet(planetName, planetDescription, planetRadius);
             planetRepo.save(addedPlanet);
-        } return (Collection<Planet>) planetRepo.findAll();
+        }
+        return (Collection<Planet>) planetRepo.findAll();
     }
 
     @GetMapping("/{id}")
@@ -60,6 +61,7 @@ public class PlanetController {
         planetRepo.save(planetToBeUpdated);
         return ResponseEntity.ok(planetToBeUpdated);
     }
+}
     
 //      @DeleteMapping(value = "{/id}")
 //            public ResponseEntity<Planet> deletePlanet(@PathVariable Long id,@RequestBody Planet planet){
