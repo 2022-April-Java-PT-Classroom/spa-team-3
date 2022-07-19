@@ -60,4 +60,11 @@ public class PlanetController {
         planetRepo.save(planetToBeUpdated);
         return ResponseEntity.ok(planetToBeUpdated);
     }
-}
+    
+//      @DeleteMapping(value = "{/id}")
+//            public ResponseEntity<Planet> deletePlanet(@PathVariable Long id,@RequestBody Planet planet){
+//
+//              planetRepo.delete();
+//        }
+//            
+//
