@@ -2,6 +2,7 @@ package org.wecancodeit.serverside.controller;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.wecancodeit.serverside.exception.ResourceNotFoundException;
@@ -61,12 +62,35 @@ public class PlanetController {
         planetRepo.save(planetToBeUpdated);
         return ResponseEntity.ok(planetToBeUpdated);
     }
+
+    //build delete planet Rest api
+    @DeleteMapping("{id}")
+    public Collection<Planet> deletePlanet(@PathVariable Long id, String body) throws JSONException {
+
+        Optional<Planet> planetToBeDeleted = planetRepo.findById(id);
+        if(planetToBeDeleted.isPresent()){
+            planetRepo.delete(planetToBeDeleted.get());
+
+
+
+        }
+        return (Collection<Planet>) planetRepo.findAll();
+
+    }
+
+//    public ResponseEntity<HttpStatus> deletePlanet(@PathVariable Long id){
+//        Planet planet  = planetRepo.findById(id).orElseThrow(() ->
+//                new ResourceNotFoundException("Planet doesn't exist with id: " + id));
+//        planetRepo.delete(planet);
+//
+//        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+//
+//
+//    }
+
+
+
+
 }
     
-//      @DeleteMapping(value = "{/id}")
-//            public ResponseEntity<Planet> deletePlanet(@PathVariable Long id,@RequestBody Planet planet){
-//
-//              planetRepo.delete();
-//        }
-//            
-//
+
