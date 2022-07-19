@@ -7,13 +7,12 @@ import style from "./style.module.scss"
 
 const Nasa = () => {
    
-    
     const [images,setImages] = useState(null);
     const [loading,setLoading] = useState(true);
 
     useEffect(() =>{
         const fetchData = async () =>{
-            const result = await Axios("https://images-api.nasa.gov/search?q=solarsystem&description");
+            const result = await Axios("https://images-api.nasa.gov/search?q=planets");
             console.log(result.data);
             // console.log(result.data.collection.version);
             // console.log(result.data.collection.items[0].href);
@@ -24,6 +23,7 @@ const Nasa = () => {
     if(images){
         setLoading(false);
     };
+    
     const timer = setTimeout(()=>{
         !images && fetchData();
 
@@ -32,6 +32,7 @@ const Nasa = () => {
     },[images]);  
     
      return (
+      
         <div className={style.nasaPage}>
             <a id="nasa"href="https://www.nasa.gov/">Nasa Website </a>
             <section className={style.nasaSection}>

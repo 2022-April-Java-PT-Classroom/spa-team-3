@@ -1,4 +1,4 @@
-package org.wecancodeit;
+package org.wecancodeit.serverside;
 
 
 import org.springframework.boot.CommandLineRunner;
@@ -14,20 +14,19 @@ import javax.annotation.Resource;
 @Component
 public class Populator implements CommandLineRunner {
 
-
     @Resource
     private PlanetRepository planetRepo;
+
     @Resource
     private ColoringRepository coloringStorage;
+
     @Override
     public void run(String... args) throws Exception {
 
         Planet mercury = new Planet("Mercury", "the smallest planet", "1516 mi");
         planetRepo.save(mercury);
-        Coloring colorPage01 = new Coloring("Test", "Test");
 
+        Coloring colorPage01 = new Coloring("Test", "Test Img");
         coloringStorage.save(colorPage01);
-
-
     }
 }

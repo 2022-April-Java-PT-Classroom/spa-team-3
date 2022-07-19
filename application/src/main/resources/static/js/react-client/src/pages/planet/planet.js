@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
 const Planet = () => {
+
     const [planets, setPlanets] =useState([]);
     
 
@@ -58,14 +59,13 @@ const Planet = () => {
 
     return (
 
-        <div className= {style.container} >
+        <div className= {style.planetContainer} >
             <h2>List of Planets</h2>
             <Link to={'/add-planet'}>Add Planet</Link>
             <div >
-            <table className={style.tableContent}>
+            <table className={style.planetTableContent}>
                 <thead>
                   <tr>
-                
                     <th>Planet Id</th>
                     <th>Planet Name</th>
                     <th>Planet Description</th>
@@ -82,7 +82,6 @@ const Planet = () => {
                                 <td>{planet.description}</td>
                                 <td>{planet.radius}</td>
                                 <td>
-                                    
                                     <Link to={`/edit-planet/${planet.id}`}> Update</Link>
                                 </td>
                                 <td>
