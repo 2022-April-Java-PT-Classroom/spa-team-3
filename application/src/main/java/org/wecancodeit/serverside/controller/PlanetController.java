@@ -85,6 +85,11 @@ public class PlanetController {
 //
 //        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 //
+//              planetRepo.delete();
+//        }
+//
+
+
 //
 //    }
 

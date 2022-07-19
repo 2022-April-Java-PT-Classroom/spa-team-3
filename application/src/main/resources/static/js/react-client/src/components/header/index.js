@@ -16,6 +16,7 @@ const Header =()=> {
                 <NavLink to={'/planets'}>Planets</NavLink>
                 <NavLink to={'/create'}>Create</NavLink>
                 <NavLink to={'/draw'}>Draw</NavLink>
+
             </ul>
             </div>
         </div>
