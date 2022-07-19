@@ -1,3 +1,4 @@
+import { toHaveErrorMessage } from "@testing-library/jest-dom/dist/matchers";
 import * as React from "react";
 
 import { ReactSketchCanvas } from "react-sketch-canvas";
@@ -5,6 +6,8 @@ import { ReactSketchCanvas } from "react-sketch-canvas";
 const styles = {
   border: "0.0625rem solid #9c9c9c",
   borderRadius: "0.25rem"
+  
+ 
 };
 
 const Canvas = class extends React.Component {
@@ -13,15 +16,26 @@ const Canvas = class extends React.Component {
 
     this.canvas = React.createRef();
   }
+ 
+   
 
   render() {
     return (
       <div>
-        <ReactSketchCanvas
-          ref={this.canvas}
-          strokeWidth={5}
-          strokeColor="black"
+       <ReactSketchCanvas
+        style={styles}
+        width="600"
+        height="800px"
+        strokeWidth={4}
+        strokeColor="teal"
+        eraserWidth={5}
+
         />
+        <div>
+    
+  
+        </div>
+
         <button
           onClick={() => {
             this.canvas.current.
@@ -37,6 +51,7 @@ const Canvas = class extends React.Component {
           Get Image
         </button>
       </div>
+      
     );
   }
 };
