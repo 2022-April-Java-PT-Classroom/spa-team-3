@@ -2,16 +2,59 @@ import React, { useEffect, useState }  from "react";
 import style from  './style.module.scss';
 import PlanetService from '../../components/services/index'
 import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const Planet = () => {
     const [planets, setPlanets] =useState([]);
+    
+
     useEffect(() => {
-        PlanetService.getAllPlanets().then((response => {
-            setPlanets(response.data);
-        })).catch(error => console.log(error))
+        
+      
+       
+
+       
             
 
+        retrieveAllPlanets();
+        
+        
+        
+
     }, []);
+
+    const retrieveAllPlanets = () => {
+        PlanetService.getAllPlanets().then((response => {
+            setPlanets(response.data)
+           
+        })).catch(error => console.log(error))
+       
+
+    }
+
+    
+
+    
+
+    const deletePlanet = (planetId) => {
+       PlanetService.deletePlanet(planetId).then((response => {
+
+        retrieveAllPlanets();
+        
+
+        console.log(response)
+           
+           
+
+       })).cath((error => {
+           console.log(error);
+       }))
+
+       
+      
+   
+
+    }
 
     return (
 
@@ -41,6 +84,10 @@ const Planet = () => {
                                 <td>
                                     
                                     <Link to={`/edit-planet/${planet.id}`}> Update</Link>
+                                </td>
+                                <td>
+                                <button className={style.actions} onClick={() =>deletePlanet(planet.id)}>Delete</button>
+                                  
                                 </td>
                             </tr>
                         )

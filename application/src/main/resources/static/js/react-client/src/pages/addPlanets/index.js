@@ -19,12 +19,13 @@ const AddPlanet = () => {
 
         const planet = {name, description, radius}
 
-        history.push('/planets');
+        history.replace('/planets')
 
         if(id){
             PlanetService.updatePlanet(id,planet).then((response) => {
+                console.log(response);
 
-                history.replace('/planets')
+                history.push('/planets')
 
 
             }).catch((error) =>{
@@ -36,7 +37,7 @@ const AddPlanet = () => {
 
             PlanetService.createPlanet(planet).then((response => {
 
-                history.replace('/planets')
+                history.push('/planets')
 
                 console.log(response.data)
                 
@@ -47,6 +48,8 @@ const AddPlanet = () => {
             })
 
         }
+
+        
 
        
         
@@ -114,7 +117,11 @@ const AddPlanet = () => {
 
                 </div>
                 <div className={style.actions}>
+
+                   
                     <button onClick={(e) => saveOrUpdatePlanet(e)}>submit</button>
+
+                   
                     <Link to={'/planets'} >Cancel</Link>
                 </div>
             </form>
