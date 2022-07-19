@@ -14,8 +14,9 @@ const Header =()=> {
                 <NavLink to={'/nasa'}>Nasa</NavLink>
                 <NavLink to={'/art'}>Art</NavLink>
                 <NavLink to={'/planets'}>Planets</NavLink>
-                <NavLink to={'/draw'}> cd
-                Draw </NavLink>
+                <NavLink to={'/create'}>Create</NavLink>
+                <NavLink to={'/draw'}>Draw</NavLink>
+
             </ul>
             </div>
         </div>

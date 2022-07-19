@@ -18,7 +18,6 @@ import java.util.Optional;
 @RequestMapping("/api/planets")
 public class PlanetController {
 
-
     @Resource
     private PlanetRepository planetRepo;
 
@@ -34,16 +33,11 @@ public class PlanetController {
         String planetDescription = newPlanet.getString("description");
         String planetRadius = newPlanet.getString("radius");
 
-
         Optional<Planet> planetToAdd = planetRepo.findByName(planetName);
         if (planetToAdd.isEmpty()) {
             Planet addedPlanet = new Planet(planetName, planetDescription, planetRadius);
             planetRepo.save(addedPlanet);
-
-
         }
-
-
         return (Collection<Planet>) planetRepo.findAll();
     }
 
@@ -53,10 +47,9 @@ public class PlanetController {
                 "exist " + id));
         return ResponseEntity.ok(planet);
     }
+
     @PutMapping("{id}")
     public ResponseEntity<Planet> updatePlanetList(@PathVariable Long id, @RequestBody Planet planet) {
-
-
         Planet planetToBeUpdated = planetRepo.findById(id).orElseThrow(() ->
                 new ResourceNotFoundException("Planet do" +
                         "doesn't exist with id: " + id));
@@ -66,10 +59,10 @@ public class PlanetController {
         planetToBeUpdated.setRadius(planet.getRadius());
 
         planetRepo.save(planetToBeUpdated);
-
-
         return ResponseEntity.ok(planetToBeUpdated);
     }
+}
+    
 //      @DeleteMapping(value = "{/id}")
 //            public ResponseEntity<Planet> deletePlanet(@PathVariable Long id,@RequestBody Planet planet){
 //
@@ -77,6 +70,3 @@ public class PlanetController {
 //        }
 //
 //
-
-
-}
