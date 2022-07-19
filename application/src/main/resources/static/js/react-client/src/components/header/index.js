@@ -1,5 +1,5 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
+import React from "react";
 import style from "./style.module.scss"
 
 const Header =()=> {
@@ -14,6 +14,8 @@ const Header =()=> {
                 <NavLink to={'/nasa'}>Nasa</NavLink>
                 <NavLink to={'/art'}>Art</NavLink>
                 <NavLink to={'/planets'}>Planets</NavLink>
+                <NavLink to={'/create'}>Create</NavLink>
+                <NavLink to={'/draw'}>Draw</NavLink>
             </ul>
             </div>
         </div>

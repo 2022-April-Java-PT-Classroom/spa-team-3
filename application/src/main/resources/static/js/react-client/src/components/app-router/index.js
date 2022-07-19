@@ -1,14 +1,15 @@
-import React from "react";
 import {Route, Switch} from 'react-router-dom';
-import HomeScreen from "../../pages/home-screen";
+
 import AboutScreen from "../../pages/about";
-import ContactScreen from "../../pages/contact-screen";
+import AddPlanet from '../../pages/addPlanets/index'
 import Art from "../../pages/art";
+import ContactScreen from "../../pages/contact-screen";
+import Create from "../../pages/create";
+import Draw from "../../pages/draw";
+import HomeScreen from "../../pages/home-screen";
 import Nasa from "../../pages/nasa";
 import Planet from '../../pages/planet/planet';
-import AddPlanet from '../../pages/addPlanets/index'
-
-
+import React from "react";
 
 const AppRouter = () => {
     return (
@@ -19,9 +20,11 @@ const AppRouter = () => {
             <Route exact path={'/about'} component={AboutScreen} />
             <Route exact path={'/nasa'} component={Nasa} />
             <Route exact path={'/art'} component={Art} />
+            <Route exact path={'/create'} component={Create} />
+            <Route exact path={'/draw'} component={Draw} />
             <Route path={'/planets'} component={Planet} />
-            <Route  path={'/add-planet'} component={AddPlanet} />
-            <Route   path={"/edit-planet/:id"} component={AddPlanet} />
+            <Route path={'/add-planet'} component={AddPlanet} />
+            <Route path={"/edit-planet/:id"} component={AddPlanet} />
         </Switch>
         
     );

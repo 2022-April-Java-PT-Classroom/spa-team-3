@@ -1,25 +1,24 @@
 .nasaPage {
-    order: 2px solid rgb(223, 190, 6);
     background-image: url(../../assets/nasabkg.png);
     width: 100%;
     height: 100%;
-    background-size: cover;
     display: grid;
     
 }
 
 .nasaText {
+    grid-row: repeat(3,1frv);
     padding-top: 25px;
-    padding-left: 35px;
+    padding-left: 45px;
     width: 100%;
     height: 100%;
     display: flex;
-    text-align: center;
     justify-content: center;
     flex-direction: column;
     color: white;
     font-family: "Nunito", sans-serif;
     font-size: 35px;
+    text-align: left;
 }
 
 .nasaPage img {
@@ -28,10 +27,11 @@
     // border-color: #f10a0a;
     float: left;
     justify-content: right;
-    border-radius: 50%;
-    max-width: 50%;
-    max-height: 50%;
+    border-radius: 100%;
+    max-width: 400px;
+    max-height: 400px;
     margin: right;
+    padding-left: 20px;
 }
 
 

@@ -5,5 +5,7 @@ import org.springframework.data.repository.CrudRepository;
 import org.wecancodeit.serverside.model.Coloring;
 
 @Repository
-public interface ColoringRepository extends CrudRepository<Coloring,Long> {
+
+public interface ColoringRepository extends CrudRepository<Coloring, Long> {
+
 }
