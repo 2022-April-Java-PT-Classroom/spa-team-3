@@ -24,7 +24,7 @@ const AddPlanet = () => {
         if(id){
             PlanetService.updatePlanet(id,planet).then((response) => {
 
-                
+                history.replace('/planets')
 
 
             }).catch((error) =>{
@@ -36,14 +36,21 @@ const AddPlanet = () => {
 
             PlanetService.createPlanet(planet).then((response => {
 
+                history.replace('/planets')
+
                 console.log(response.data)
-                history.push('/planets')
+                
+                
     
             })).catch(error =>{
                 console.log(error);
             })
 
         }
+
+       
+        
+
        
     }
 
