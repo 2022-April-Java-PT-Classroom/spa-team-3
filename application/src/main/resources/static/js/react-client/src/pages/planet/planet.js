@@ -1,7 +1,8 @@
 import React, { useEffect, useState }  from "react";
-import style from  './style.module.scss';
-import PlanetService from '../../components/services/index'
+
 import { Link } from "react-router-dom";
+import PlanetService from '../../components/planet-service/index'
+import style from  './style.module.scss';
 
 const Planet = () => {
     const [planets, setPlanets] = useState([]);
