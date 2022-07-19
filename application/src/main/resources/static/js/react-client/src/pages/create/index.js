@@ -19,15 +19,25 @@ const Create = () => {
             setLoading(false);
         }
 
-        fetchColorPages();
+        const timer = setTimeout(() => {
+            !colorPages && fetchColorPages();
+          }, 500);
+          return () => clearTimeout(timer);
 
     }, [colorPages]);
 
-    console.log(colorPages);
-
     return (
-        <div>
-
+        loading ? <h3>Loading...</h3> :
+        <div className={style.createPage}>
+            <h2>Coloring Pages</h2>
+            <div className={style.createContain}>
+            {colorPages.map(colorPage => (
+                <div key={colorPage.coloringId}>
+                    <h3 className={style.createH3}>{colorPage.coloringTitle}</h3>
+                    <img className={style.createImg} src={colorPage.coloringImage}></img>
+                </div>
+                ))}
+            </div>
         </div>
     );
 }
