@@ -72,4 +72,13 @@ public class PlanetController {
 
     }
 
+    @DeleteMapping("/api/planets/{id}/delete-planet")
+    public Collection<Planet> deletePlanet(@PathVariable Long id) throws JSONException {
+        Optional<Planet> planetToRemoveOpt = planetRepo.findById(id);
+        if(planetToRemoveOpt.isPresent()){
+            planetRepo.delete(planetToRemoveOpt.get());
+        }
+        return (Collection<Planet>) planetRepo.findAll();
+    }
+
 }
