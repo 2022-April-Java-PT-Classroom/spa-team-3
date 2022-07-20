@@ -6,12 +6,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #FFCF70;
+    background-image: url(../../assets/kgdraw1.png); 
+//     background-color: #FFCF70;
 }
 
 .drawCanvas {
     margin: 30px auto;
-    border: 10px dashed #FF9233 !important;
+    border: 10px dashed #e75713 !important;
 }
 
 .drawButton {

@@ -30,15 +30,23 @@ const Nasa = () => {
     } ,1000);
     return ()=> clearTimeout(timer);
     },[images]);  
+
+
     
      return (
       
         <div className={style.nasaPage}>
             <a id="nasa"href="https://www.nasa.gov/">Nasa Website </a>
+            <div className={style.Starimg}>
+               <h1 className={style.Starimg1}></h1>
+               <h2 className={style.Starimg2}></h2>
+               <h3 className={style.Starimg3}></h3>
+             </div>
+             
             <section className={style.nasaSection}>
             <div className={style.nasaText}> 
             {loading ? <h3 className={style.nasaImg}> Loading ...</h3> : <SolarImages images={images} />} 
-            {/* {loading ? <h3 className={style.nasaImg}> Loading ...</h3> : <img src={images}></img>}  */}
+             
             </div>   
             </section>
         </div>
