@@ -1,6 +1,6 @@
 import { toHaveErrorMessage } from "@testing-library/jest-dom/dist/matchers";
 import * as React from "react";
-
+import style from "../../pages/draw/style.module.scss";
 import { ReactSketchCanvas } from "react-sketch-canvas";
 
 const styles = {
@@ -21,11 +21,12 @@ const Canvas = class extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className={style.drawContainer}>
        <ReactSketchCanvas
+       className={style.drawCanvas}
         style={styles}
-        width="600"
-        height="800px"
+        width="80%"
+        height="80vh"
         strokeWidth={4}
         strokeColor="teal"
         eraserWidth={5}
@@ -37,6 +38,7 @@ const Canvas = class extends React.Component {
         </div>
 
         <button
+        className={style.drawButton}
           onClick={() => {
             this.canvas.current.
               exportImage("png")
@@ -48,7 +50,7 @@ const Canvas = class extends React.Component {
               });
           }}
         >
-          Get Image
+          Download Image
         </button>
       </div>
       

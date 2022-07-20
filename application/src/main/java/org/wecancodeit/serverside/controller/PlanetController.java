@@ -71,31 +71,9 @@ public class PlanetController {
         if(planetToBeDeleted.isPresent()){
             planetRepo.delete(planetToBeDeleted.get());
 
-
-
         }
         return (Collection<Planet>) planetRepo.findAll();
-
     }
-
-//    public ResponseEntity<HttpStatus> deletePlanet(@PathVariable Long id){
-//        Planet planet  = planetRepo.findById(id).orElseThrow(() ->
-//                new ResourceNotFoundException("Planet doesn't exist with id: " + id));
-//        planetRepo.delete(planet);
-//
-//        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-//
-//              planetRepo.delete();
-//        }
-//
-
-
-//
-//    }
-
-
-
-
 }
     
 

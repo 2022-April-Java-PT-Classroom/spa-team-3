@@ -12,7 +12,7 @@ const HomeScreen =()=>{
       <section className={style.heroSection}>
         <div className={style.heroGridText}>
           <h1>Welcome To JAC</h1>
-          <h2>Mystery Educator Learning</h2>
+          <h2>Mystery Educator Learning Portal</h2>
           <a href="/about">About Us</a>
 
         </div>
@@ -45,12 +45,21 @@ const HomeScreen =()=>{
       </section>
 
       <section className={style.randSection}>
-        <div className={style.randGridImg}>
-          <img src={art}></img>
+      <div className={style.randGridTextOne}>
+          <h2>Create A Planet</h2>
+          <a href="planets">Click Here!</a>
         </div>
-        <div className={style.randGridText}>
-          <h2>Another Section</h2>
-          <a href="#">Link Here!</a>
+        <div className={style.randGridTextTwo}>
+          <h2>Color A Picture</h2>
+          <a href="/create">Click Here!</a>
+        </div>
+        <div className={style.randGridTextThree}>
+          <h2>Draw Some Art</h2>
+          <a href="/draw">Click Here!</a>
+        </div>
+        <div className={style.randGridTextFour}>
+          <h2>Do An Activity</h2>
+          <a href="#">Click Here!</a>
         </div>
       </section>
     </div>
