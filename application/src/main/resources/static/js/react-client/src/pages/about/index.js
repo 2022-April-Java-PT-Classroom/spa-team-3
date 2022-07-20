@@ -8,19 +8,8 @@ const AboutScreen = () => {
           <div className={style.teamTitle}>
             <h5>Our Team</h5>
             </div>
-            <div className={style.card}>
-              <h2>Noelle Gisewhite</h2>  
-              <div className={style.container}> 
-              <h1><img className={style.Img} src="https://media-exp1.licdn.com/dms/image/C5603AQGkPSH6TY4kpw/profile-displayphoto-shrink_200_200/0/1651268817526?e=1663200000&v=beta&t=0tFxMxekMA6_5RIZs45y2xAsk4T3KPtS4e0KYxlGqoQ" alt="noellepic"></img>
-              </h1>
-              </div> 
-              <h4>Full Stack Developer</h4>
-              <a href="https://github.com/noellegisewhite">Github</a>
-            <br></br>
-            <a href="https://www.linkedin.com/in/noellegisewhite/">LinkedIn</a>   
-            <br></br>
-            </div>
-            
+
+          <div className={style.teamBlock}>
             <div className={style.card}>
               <h2>Penny Schuenke</h2>  
               <div className={style.container}> 
@@ -29,9 +18,18 @@ const AboutScreen = () => {
               </div> 
               <h4>Full Stack Developer</h4>
             <a href="https://github.com/pennyschuenke">Github</a>
-            <br></br>
             <a href="https://www.linkedin.com/in/penny-schuenke/">LinkedIn</a>  
-            <br></br>
+            </div>
+
+            <div className={style.card}>
+              <h2>Noelle Gisewhite</h2>  
+              <div className={style.container}> 
+              <h1><img className={style.Img} src="https://media-exp1.licdn.com/dms/image/C5603AQGkPSH6TY4kpw/profile-displayphoto-shrink_200_200/0/1651268817526?e=1663200000&v=beta&t=0tFxMxekMA6_5RIZs45y2xAsk4T3KPtS4e0KYxlGqoQ" alt="noellepic"></img>
+              </h1>
+              </div> 
+              <h4>Full Stack Developer</h4>
+              <a href="https://github.com/noellegisewhite">Github</a>
+            <a href="https://www.linkedin.com/in/noellegisewhite/">LinkedIn</a>   
             </div>
             
             <div className={style.card}>
@@ -42,9 +40,7 @@ const AboutScreen = () => {
               </div> 
               <h4>Full Stack Developer</h4>
             <a href="https://github.com/zimmchad">Github</a>
-            <br></br>
             <a href="https://www.linkedin.com/in/zibad/">LinkedIn</a>  
-            <br></br>
             </div>
             
           <div className={style.card}>
@@ -55,12 +51,8 @@ const AboutScreen = () => {
               </div> 
               <h4>Full Stack Developer</h4>
             <a href="https://github.com/zimmchad">Github</a>
-            <br></br>
             <a href="https://www.linkedin.com/in/chad-zimmerman-4b4b35220/">LinkedIn</a>   
-            <br></br>
             </div>
-            
-            
             
             <div className={style.card}>
               <h2>Hakan Celik</h2>  
@@ -70,23 +62,19 @@ const AboutScreen = () => {
               </div> 
               <h4>Full Stack Developer</h4>
             <a href="https://github.com/hakancelik13">Github</a>
-            <br></br>
             <a href="https://www.linkedin.com/in/hakan-celik-84818347/">LinkedIn</a>
-            <br></br>
             </div>
             
             <div className={style.card}>
                <h2>Kobby Nkansah</h2>
-               <div className={style.container}> 
-               <br></br>
+            <div className={style.container}> 
                <h1><img className={style.Img} src="https://media-exp1.licdn.com/dms/image/C5603AQEFHD5EO5JleQ/profile-displayphoto-shrink_200_200/0/1654033451634?e=1663200000&v=beta&t=1LOl0lSDyfysHcCvSg6IahBDwYDGTJ3k6rCbZYBQHjw" alt="kobbypic"></img>
               </h1>
               </div>
               <h4>Full Stack Developer</h4>
             <a href="https://github.com/kobmank">Github</a>
-            <br></br>
             <a href="https://www.linkedin.com/in/kobby-nkansah-692280218/">LinkedIn</a>
-            <br></br>
+            </div>
             </div>
             </section>
         </div>

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import Axios from "axios";
 import style from "./style.module.scss";
 
@@ -24,15 +24,18 @@ const Create = () => {
           }, 500);
           return () => clearTimeout(timer);
 
-    }, [colorPages]);
+          
+        }, [colorPages]);
+        
+        // PRINT =============================================================
 
     return (
         loading ? <h3>Loading...</h3> :
         <div className={style.createPage}>
-            <h2>Coloring Pages</h2>
+            <h5 className={style.createH5}>Coloring Pages</h5>
             <div className={style.createContain}>
             {colorPages.map(colorPage => (
-                <div key={colorPage.coloringId}>
+                <div key={colorPage.coloringId} className={style.createContainSub}>
                     <h3 className={style.createH3}>{colorPage.coloringTitle}</h3>
                     <img className={style.createImg} src={colorPage.coloringImage}></img>
                 </div>

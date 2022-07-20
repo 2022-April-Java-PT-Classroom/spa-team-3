@@ -1,12 +1,14 @@
 import { NavLink } from "react-router-dom";
 import React from "react";
-import style from "./style.module.scss"
+import style from "./style.module.scss";
+import logo from "../../assets/logo2.png";
 
 const Header =()=> {
     return (
         <div className={style.header}>
             <div className={style.nav}>
-            <h1>Jac's Mystery Educator</h1>
+            {/* <h1>Jac's Mystery Educator</h1> */}
+            <img src={logo} className={style.logo}></img>
             <ul className={style.navList}>
                 <NavLink to={'/'}>Home</NavLink>
                 <NavLink to={'/contact'}>Contact</NavLink>
