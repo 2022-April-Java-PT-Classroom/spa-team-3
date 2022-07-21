@@ -1,3 +1,5 @@
+7/21/2022: First final before code freeze
+
 7/11/22: filled out the header, with links to 'home,' 'about', and 'contact' pages.
 filled out some styling to get the links to the right, give them borders and hover colors
 created an scss style folder for the main app and index files
