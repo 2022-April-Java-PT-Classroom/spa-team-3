@@ -3,39 +3,23 @@ import style from './style.module.scss';
 
 const AboutScreen = () => {
     return (
-    
-        <div className={style.team}>
-            
-            <div className={style.title}><h5>Our Team</h5></div>
-            
+      <div>
+        <section className={style.team}>
+          <div className={style.teamTitle}>
+            <h5>Our Team</h5>
+            </div>
+
+          <div className={style.teamBlock}>
             <div className={style.card}>
-              <h2>Chad Zimmerman</h2>  
+              <h2>Penny Schuenke</h2>  
               <div className={style.container}> 
-              <h1><img className={style.Img}src="https://media-exp1.licdn.com/dms/image/C4D03AQEOcd8Of0HR6A/profile-displayphoto-shrink_200_200/0/1650207672594?e=1663200000&v=beta&t=hPZrEEgpWwJFE5xtqLYDB4oWsngmDx-486EkNOW2Dvo" alt="chadpic"></img>
+              <h1> <img className={style.Img} src="https://media-exp1.licdn.com/dms/image/C5603AQEts2rMqIO8nA/profile-displayphoto-shrink_800_800/0/1657918448299?e=1663804800&v=beta&t=8H7_VTX8gFKDnJtNEi7iqyqGbPllYJX6nrJi7Y5L6Ro" alt="pennypic"></img>
               </h1>
               </div> 
               <h4>Full Stack Developer</h4>
-            <a href="https://github.com/zimmchad">Github</a>
-            <br></br>
-            <a href="https://www.linkedin.com/in/chad-zimmerman-4b4b35220/">LinkedIn</a>   
-            <br></br>
+            <a href="https://github.com/pennyschuenke">Github</a>
+            <a href="https://www.linkedin.com/in/penny-schuenke/">LinkedIn</a>  
             </div>
-            
-           
-            <div className={style.card}>
-               <h2>Kobby Nkansah</h2>
-               <div className={style.container}> 
-               <br></br>
-               <h1><img className={style.Img} src="https://media-exp1.licdn.com/dms/image/C5603AQEFHD5EO5JleQ/profile-displayphoto-shrink_200_200/0/1654033451634?e=1663200000&v=beta&t=1LOl0lSDyfysHcCvSg6IahBDwYDGTJ3k6rCbZYBQHjw" alt="kobbypic"></img>
-              </h1>
-              </div>
-              <h4>Full Stack Developer</h4>
-            <a href="https://github.com/kobmank">Github</a>
-            <br></br>
-            <a href="https://www.linkedin.com/in/kobby-nkansah-692280218/">LinkedIn</a>
-            <br></br>
-            </div>
-            
 
             <div className={style.card}>
               <h2>Noelle Gisewhite</h2>  
@@ -45,12 +29,9 @@ const AboutScreen = () => {
               </div> 
               <h4>Full Stack Developer</h4>
               <a href="https://github.com/noellegisewhite">Github</a>
-            <br></br>
             <a href="https://www.linkedin.com/in/noellegisewhite/">LinkedIn</a>   
-            <br></br>
             </div>
             
-
             <div className={style.card}>
               <h2>Zibad Maldaye</h2>  
               <div className={style.container}> 
@@ -59,22 +40,18 @@ const AboutScreen = () => {
               </div> 
               <h4>Full Stack Developer</h4>
             <a href="https://github.com/zimmchad">Github</a>
-            <br></br>
             <a href="https://www.linkedin.com/in/zibad/">LinkedIn</a>  
-            <br></br>
             </div>
             
-            <div className={style.card}>
-              <h2>Penny Schuenke</h2>  
-              <div className={style.container}> 
-              <h1> <img className={style.Img} src="https://media-exp1.licdn.com/dms/image/C4D03AQEOL17F7WcdHQ/profile-displayphoto-shrink_200_200/0/1648218389063?e=1663200000&v=beta&t=tErh_GGAq1KW0Wy3w6mOao5CeauDSt9OCD2wvcK6IVE" alt="pennypic"></img>
+          <div className={style.card}>
+            <h2>Chad Zimmerman</h2>  
+          <div className={style.container}> 
+            <h1><img className={style.Img}src="https://media-exp1.licdn.com/dms/image/C4D03AQEOcd8Of0HR6A/profile-displayphoto-shrink_200_200/0/1650207672594?e=1663200000&v=beta&t=hPZrEEgpWwJFE5xtqLYDB4oWsngmDx-486EkNOW2Dvo" alt="chadpic"></img>
               </h1>
               </div> 
               <h4>Full Stack Developer</h4>
-            <a href="https://github.com/pennyschuenke">Github</a>
-            <br></br>
-            <a href="https://www.linkedin.com/in/penny-schuenke/">LinkedIn</a>  
-            <br></br>
+            <a href="https://github.com/zimmchad">Github</a>
+            <a href="https://www.linkedin.com/in/chad-zimmerman-4b4b35220/">LinkedIn</a>   
             </div>
             
             <div className={style.card}>
@@ -85,10 +62,21 @@ const AboutScreen = () => {
               </div> 
               <h4>Full Stack Developer</h4>
             <a href="https://github.com/hakancelik13">Github</a>
-            <br></br>
             <a href="https://www.linkedin.com/in/hakan-celik-84818347/">LinkedIn</a>
-            <br></br>
             </div>
+            
+            <div className={style.card}>
+               <h2>Kobby Nkansah</h2>
+            <div className={style.container}> 
+               <h1><img className={style.Img} src="https://media-exp1.licdn.com/dms/image/C5603AQEFHD5EO5JleQ/profile-displayphoto-shrink_200_200/0/1654033451634?e=1663200000&v=beta&t=1LOl0lSDyfysHcCvSg6IahBDwYDGTJ3k6rCbZYBQHjw" alt="kobbypic"></img>
+              </h1>
+              </div>
+              <h4>Full Stack Developer</h4>
+            <a href="https://github.com/kobmank">Github</a>
+            <a href="https://www.linkedin.com/in/kobby-nkansah-692280218/">LinkedIn</a>
+            </div>
+            </div>
+            </section>
         </div>
      );
 }

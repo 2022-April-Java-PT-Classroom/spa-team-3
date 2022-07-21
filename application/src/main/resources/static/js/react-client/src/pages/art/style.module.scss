@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito:wght@400;700;900&display=swap');
+
+// HERO SECTION ===========================================
+
+.artSection {
+    width: 100%;
+    height: 100%;
+    background-color: #88E457;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.artGridImg{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.artGridImg img {
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+}
+
+.artGridText {
+    width: 100%;
+    height: 100%;
+    margin-top: 70px !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 0 30px;
+    color: white;
+    font-family: "Nunito", sans-serif;
+}
+
+.artGridText h1 {
+    font-size: 3rem;
+    margin: 5px;
+}
+
+.artGridText h4 {
+    font-size: 2rem;
+    margin: 5px;
+}
+
+.artGridText h3 {
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+.artGridText button {
+    margin: 20px auto 150px auto;
+    padding: 30px 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: #1E4199;
+    font-size: 2rem;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.artGridText button:hover {
+    background-color: #3361D7;
+}
+
+.artGridText a {
+    margin: 10px auto;
+    padding: 30px 60px;
+    border-radius: 50px;
+    background-color: #1E4199;
+    font-size: 2rem;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.artGridText a:hover {
+    background-color: #3361D7;
+}

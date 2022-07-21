@@ -1,35 +1,61 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+import Axios from "axios";
 import style from "./style.module.scss";
 
+// Department Link
+// https://collectionapi.metmuseum.org/public/collection/v1/objects?departmentIds=1
 
+var artCollection;
 
 const Art = () => {
 
-    fetch("https://collectionapi.metmuseum.org/public/collection/v1/objects?departmentIds=13&hasImages=true")
-        .then(response => response.json())
-        .then(jsonData => {
-            const collection = jsonData.objectIDs;
-            const title = jsonData.title;
-            const artist = jsonData.artistDisplayName;
-            const department = jsonData.department;
-            const image = jsonData.primaryImage;
+    // FETCH ID ==========================================================
 
-            collection.forEach(artPiece => {
-                const artTitle = document.querySelector("#art-title");
-                artPiece.innerText = artPiece.title;
-            });
-        })
-        .catch(err => console.log(err));
+        fetch("https://collectionapi.metmuseum.org/public/collection/v1/objects?departmentIds=1")
+            .then(response => response.json())
+            .then(jsonData => artCollection = jsonData.objectIDs)
+            .catch(err => console.log(err));
+
+    // AXIOS ==============================================================
+
+    const [piece, setPiece] = useState(null);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const fetchData = async () => {
+
+            const artSingle = artCollection[Math.floor(Math.random() * artCollection.length)];
+            const result = await Axios(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${artSingle}`);
+            setPiece(result.data);
+        };
+
+        if (piece) {
+            setLoading(false);
+        }
+        
+        const timer = setTimeout(() => {
+            !piece && fetchData() ;
+        }, 1000);
+        return () => clearTimeout(timer);
+        
+    }, [piece]);
 
     return ( 
+        loading ? <h3>Loading...</h3> :
         <div>
-            <h2>ART PAGE</h2> 
-            <section id="art-section">
-                <h3 id="art-title">Title</h3>
-                <h4 id="art-artist">Artist</h4>
-                <h5 id="art-department">Department</h5>
-                <img src=""></img>
-            </section>
+            <section className={style.artSection}>
+                <div className={style.artGridText}>
+                    <h1 id="title">Name: {piece.title}</h1>
+                    <h4 id="artist">Artist: {piece.artistDisplayName}</h4>
+                    <h4 id="department">Department: {piece.department}</h4>
+                    <h3 id="medium">Medium: {piece.medium}</h3>
+                    <h3>Date: <span id="begin">{piece.objectBeginDate}</span>-<span id="end">{piece.objectEndDate}</span></h3>
+                    <button onClick={() => setPiece(!piece)}>More Art</button>
+                </div>
+                <div className={style.artGridImg}>
+                <img id="image" src={piece.primaryImage}></img>
+                </div>
+         </section>
         </div>
     );
 }

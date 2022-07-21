@@ -1,3 +1,75 @@
-.header{
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito:wght@400;700;900&display=swap');
+
+.aboutPage {
+    width: 100%;
+    height: 100%;
+    background-color: #3361D7;
+}
+
+.aboutSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.aboutGridImg img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: block;
+}
+
+.aboutGridText {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    background-color: #3361D7;
+}
+
+.aboutGridText p {
+    padding: 5px 50px;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.aboutGridText a {
+    font-size: 1.5rem;
+    margin: 10px auto;
+    padding: 30px 60px;
+    border-radius: 50px;
+    background-color: #1E4199;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.aboutGridText a:hover {
+    background-color: #7796E4;
+}
+
+.aboutFormSection {
+    width: 50%;
+    margin: auto;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Lato", sans-serif !important;
+}
+
+.aboutFormContain {
+    padding-bottom: 30px;
+}
+
+.aboutFormContainH2 {
+    margin-top: 50px;
+    font-size: 2rem;
     text-align: center;
 }

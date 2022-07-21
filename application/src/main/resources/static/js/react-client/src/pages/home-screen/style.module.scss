@@ -1,4 +1,377 @@
-body{
-    background-image: url(\assets\bkgrkid.png);
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito:wght@400;700;900&display=swap');
+
+// HERO SECTION ===========================================
+
+.heroSection {
+    width: 100%;
+    height: 80vh;
+    // background-image: url("../../assets/bkgrkid.png");
+    background-size: cover;
+    background-color: #7796E4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
 }
+
+
+.heroGridImg img {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    display: block;
+}
+
+.heroGridText {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: "Nunito", sans-serif;
+}
+
+.heroGridText h1 {
+    font-size: 3rem;
+    margin: 10px auto;
+}
+
+.heroGridText h2 {
+    font-size: 2rem;
+    margin: 10px auto;
+}
+
+.heroGridText h3 {
+    font-size: 2rem;
+    margin: 10px auto;
+}
+
+.heroGridText a {
+    font-size: 2rem;
+    margin: 10px auto;
+    padding: 30px 60px;
+    border-radius: 50px;
+    background-color: #1E4199;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.heroGridText a:hover {
+    background-color: #3361D7;
+}
+
+// NASA SECTION ===========================================
+
+.nasaSection {
+    width: 100%;
+    height: 80vh;
+    background-image: url("../../assets/Star-Bg.svg");
+    background-size: contain;
+    background-color: #12265A;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.nasaGridImg img {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    display: block;
+}
+
+.nasaGridText {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: "Nunito", sans-serif;
+}
+
+.nasaGridText h2 {
+    font-size: 4rem;
+    margin: 10px auto;
+}
+
+.nasaGridText a {
+    font-size: 2.5rem;
+    margin: 10px auto;
+    padding: 30px 60px;
+    border-radius: 50px;
+    background-color: #7796E4;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.nasaGridText a:hover {
+    background-color: #446EDA;
+}
+
+// ART SECTION ============================================
+
+.artSection {
+    width: 100%;
+    height: 80vh;
+    background-image: url("../../assets/paint-splats.svg");
+    background-size: contain;
+    background-color: #FFCF70;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.artGridImg img {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    display: block;
+}
+
+.artGridText {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: "Nunito", sans-serif;
+}
+
+.artGridText h2 {
+    font-size: 4rem;
+    margin: 10px auto;
+}
+
+.artGridText a {
+    font-size: 2.5rem;
+    margin: 10px auto;
+    padding: 30px 60px;
+    border-radius: 50px;
+    background-color: #FF9233;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.artGridText a:hover {
+    background-color: #FF7C0A;
+}
+
+// RAND SECTION ===========================================
+
+.randSection {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 20px 20px !important;
+    background-color: #FF7E7E;
+    display: grid;
+    gap: 50px 50px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.randGridImg img {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    display: block;
+}
+
+// RANDOM ONE =============================================
+
+.randGridTextOne {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    border: 10px dashed #FFF;
+}
+
+.randGridTextOne h2 {
+    font-size: 4rem;
+    margin: 20px auto;
+}
+
+.randGridTextOne a {
+    font-size: 2.5rem;
+    margin: 10px auto;
+    padding: 30px 60px;
+    border-radius: 50px;
+    background-color: #FF3333;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.randGridTextOne a:hover {
+    background-color: #FF4747;
+}
+
+// RANDOM TWO =============================================
+
+.randGridTextTwo {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    border: 10px dashed #FFF;
+}
+
+.randGridTextTwo h2 {
+    font-size: 4rem;
+    margin: 20px auto;
+}
+
+.randGridTextTwo a {
+    font-size: 2.5rem;
+    margin: 10px auto;
+    padding: 30px 60px;
+    border-radius: 50px;
+    background-color: #FF3333;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.randGridTextTwo a:hover {
+    background-color: #FF4747;
+}
+
+// RANDOM THREE ===========================================
+
+.randGridTextThree {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    border: 10px dashed #FFF;
+}
+
+.randGridTextThree h2 {
+    font-size: 4rem;
+    margin: 20px auto;
+}
+
+.randGridTextThree a {
+    font-size: 2.5rem;
+    margin: 10px auto;
+    padding: 30px 60px;
+    border-radius: 50px;
+    background-color: #FF3333;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.randGridTextThree a:hover {
+    background-color: #FF4747;
+}
+
+// RANDOM FOUR ============================================
+
+.randGridTextFour {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    border: 10px dashed #FFF;
+}
+
+.randGridTextFour h2 {
+    font-size: 4rem;
+    margin: 20px auto;
+}
+
+.randGridTextFour a {
+    font-size: 2.5rem;
+    margin: 10px auto;
+    padding: 30px 60px;
+    border-radius: 50px;
+    background-color: #FF3333;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.randGridTextFour a:hover {
+    background-color: #FF4747;
+}
+
+// OTHER ==================================================
+
+.cardContain {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+
+.cards {
+    width: 20%;
+    height: 110%;
+    background-color: aqua;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+

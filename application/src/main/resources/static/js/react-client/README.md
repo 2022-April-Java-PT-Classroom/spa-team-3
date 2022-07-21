@@ -1,9 +1,12 @@
 7/11/22: filled out the header, with links to 'home,' 'about', and 'contact' pages.
 filled out some styling to get the links to the right, give them borders and hover colors
 created an scss style folder for the main app and index files
-put imports into the main app and index files
+put imports into the main app and index files hello
+
 
 7/12/22: started the about page bios.  added linkedin and github links for those I knew.  Put linked in profile pics as placeholders.  Page needs styled still so all content fits.  
+
+testing this branch
 
 # Testing branch
 
