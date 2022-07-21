@@ -28,13 +28,13 @@ const Art = () => {
             const result = await Axios(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${artSingle}`);
             setPiece(result.data);
         };
-    
+
         if (piece) {
-          setLoading(false);
+            setLoading(false);
         }
-    
+        
         const timer = setTimeout(() => {
-          !piece && fetchData();
+            !piece && fetchData() ;
         }, 1000);
         return () => clearTimeout(timer);
         
@@ -50,8 +50,7 @@ const Art = () => {
                     <h4 id="department">Department: {piece.department}</h4>
                     <h3 id="medium">Medium: {piece.medium}</h3>
                     <h3>Date: <span id="begin">{piece.objectBeginDate}</span>-<span id="end">{piece.objectEndDate}</span></h3>
-                    {/* <button onClick={refresh}>More Art</button> */}
-                    <a href="/art">More Art</a>
+                    <button onClick={() => setPiece(!piece)}>More Art</button>
                 </div>
                 <div className={style.artGridImg}>
                 <img id="image" src={piece.primaryImage}></img>
