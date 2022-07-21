@@ -1,9 +1,11 @@
 import { NavLink } from "react-router-dom";
-import React from "react";
+import React, { useEffect } from "react";
 import style from "./style.module.scss";
 import logo from "../../assets/logo2.png";
 
 const Header =()=> {
+
+    
     return (
         <div className={style.header}>
             <div className={style.nav}>
