@@ -4,10 +4,7 @@
 
 .artSection {
     width: 100%;
-    height: 100vh;
-    max-height: 100%;
-    // background-image: url("../../assets/bkgrkid.png");
-    background-size: cover;
+    height: 100%;
     background-color: #88E457;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -32,6 +29,7 @@
 .artGridText {
     width: 100%;
     height: 100%;
+    margin-top: 70px !important;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -57,9 +55,10 @@
 }
 
 .artGridText button {
-    margin: 10px auto;
+    margin: 20px auto 150px auto;
     padding: 30px 60px;
     border-radius: 50px;
+    border: none;
     background-color: #1E4199;
     font-size: 2rem;
     color: white;
@@ -68,6 +67,10 @@
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.3s ease;
+}
+
+.artGridText button:hover {
+    background-color: #3361D7;
 }
 
 .artGridText a {
