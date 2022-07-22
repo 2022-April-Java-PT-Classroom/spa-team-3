@@ -53,7 +53,7 @@ const Art = () => {
                     <button onClick={() => setPiece(!piece)}>More Art</button>
                 </div>
                 <div className={style.artGridImg}>
-                <img id="image" src={piece.primaryImage}></img>
+                <img id="image" src={piece.primaryImage} alt={""}></img>
                 </div>
          </section>
         </div>

@@ -27,6 +27,24 @@
     color: #FFF;
 }
 
+.ActivityLink {
+    border: none;
+    margin: 0 5px;
+    padding: 1px 30px;
+    border-radius: 50px;
+    background-color: #7796E4;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.ActivityLink:hover {
+    background-color: #446EDA;
+}
+
 .ActivityBtn {
     font-size: 2.5rem;
     margin: 20px auto;
