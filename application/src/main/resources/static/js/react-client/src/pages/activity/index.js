@@ -30,7 +30,7 @@ return (
     loading ? <h3>Loading...</h3> :
     <div>
         <section>
-            <div>
+            <div className={style.ActivityGrid}>
                 <h1>Activity Name: {activity.activity}</h1>
                 <h2>Type: {activity.type}</h2>
                 <h3>Price: {activity.price}</h3>
