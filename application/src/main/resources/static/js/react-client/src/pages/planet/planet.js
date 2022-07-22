@@ -12,16 +12,7 @@ const Planet = () => {
 
     useEffect(() => {
         
-      
-       
-
-       
-            
-
-        retrieveAllPlanets();
-        
-        
-        
+        retrieveAllPlanets(); 
 
     }, []);
 
@@ -30,41 +21,39 @@ const Planet = () => {
             setPlanets(response.data)
            
         })).catch(error => console.log(error))
-       
-
     }
-
-    
-
-    
 
     const removePlanet = (planetId) => {
     
        PlanetService.deletePlanet(planetId).then((response => {
 
         retrieveAllPlanets();
-        
-
         console.log(response)
            
-           
-
        })).cath((error => {
            console.log(error);
        }))
-
-       
-      
-   
-
     }
 
     return (
 
-        <div className= {style.planetContainer} >
-            <h2>List of Planets</h2>
-            <Link to={'/add-planet'}>Add Planet</Link>
-            <div >
+        <div className= {style.planetContainer}>
+            <div className={style.planetHeader}>
+                <h2 className={style.planetH2}>Create Your Own Planet</h2>
+                <Link to={'/add-planet'} className={style.planButton}>Add Your Planet</Link>
+            </div>
+
+            <div className={style.planetGrid}>
+            {planets.map(planet => (
+            <div className={style.planetInner} key={planet.id}>
+                <img className={style.planetGridImg} src={planet.planetImage}></img>
+                <h3 className={style.planetInnerH3}>{planet.name}</h3>
+                <h4 className={style.planetInnerH4}>{planet.description}</h4>
+            </div>
+            ))}
+            </div>
+
+            <div>
             <table className={style.planetTableContent}>
                 <thead>
                   <tr>
@@ -84,11 +73,8 @@ const Planet = () => {
                                 <td>{planet.description}</td>
                                 <td>{planet.radius}</td>
                                 <td>
-                                    <Link to={`/edit-planet/${planet.id}`}> Update</Link>
-                                </td>
-                                <td>
-                                <button className={style.actions} onClick={() =>removePlanet(planet.id)}>Delete</button>
-                                  
+                                    <button className={style.actions}><Link to={`/edit-planet/${planet.id}`}>Update</Link></button>
+                                    <button className={style.actions} onClick={() =>removePlanet(planet.id)}>Delete</button>
                                 </td>
                             </tr>
                         )
@@ -96,8 +82,8 @@ const Planet = () => {
                 </tbody>
             </table>
             </div>
-
         </div>
     )
 }
+
 export default Planet;
