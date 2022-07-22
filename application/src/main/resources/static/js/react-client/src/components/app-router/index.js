@@ -1,6 +1,7 @@
 import {Route, Switch} from 'react-router-dom';
 
 import AboutScreen from "../../pages/about";
+import Activity from '../../pages/activity';
 import AddPlanet from '../../pages/addPlanets/index'
 import Art from "../../pages/art";
 import ContactScreen from "../../pages/contact-screen";
@@ -21,6 +22,7 @@ const AppRouter = () => {
             <Route exact path={'/nasa'} component={Nasa} />
             <Route exact path={'/art'} component={Art} />
             <Route exact path={'/create'} component={Create} />
+            <Route exact path={'/activity'} component={Activity} />
             <Route exact path={'/draw'} component={Draw} />
             <Route path={'/planets'} component={Planet} />
             <Route path={'/add-planet'} component={AddPlanet} />

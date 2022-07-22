@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
-import React, { useEffect } from "react";
-import style from "./style.module.scss";
+import React from "react";
 import logo from "../../assets/logo2.png";
+import style from "./style.module.scss";
 
 const Header =()=> {
 
@@ -20,6 +20,7 @@ const Header =()=> {
                 <NavLink to={'/planets'}>Planets</NavLink>
                 <NavLink to={'/create'}>Create</NavLink>
                 <NavLink to={'/draw'}>Draw</NavLink>
+                <NavLink to={'/activity'}>Activity</NavLink>
 
             </ul>
             </div>
