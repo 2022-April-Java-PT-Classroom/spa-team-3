@@ -4,6 +4,8 @@ import logo from "../../assets/logo2.png";
 import style from "./style.module.scss";
 
 const Header =()=> {
+
+    
     return (
         <div className={style.header}>
             <div className={style.nav}>
