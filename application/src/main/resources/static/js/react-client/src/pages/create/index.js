@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, {useEffect, useState} from "react";
 import Axios from "axios";
 import style from "./style.module.scss";
 
@@ -11,7 +11,7 @@ const Create = () => {
 
         const fetchColorPages = async () => {
 
-            const result = await Axios("http://localhost:8080/print/pages");
+            const result = await Axios("http://localhost:8080/api/printables");
             setColorPages(result.data);
         }
 
@@ -29,6 +29,12 @@ const Create = () => {
         
         // PRINT =============================================================
 
+        function printImage() {
+            const printable = window.open(document.getElementById("coloring").src);
+            printable.focus();
+            printable.print();
+        }
+
     return (
         loading ? <h3>Loading...</h3> :
         <div className={style.createPage}>
@@ -37,7 +43,7 @@ const Create = () => {
             {colorPages.map(colorPage => (
                 <div key={colorPage.coloringId} className={style.createContainSub}>
                     <h3 className={style.createH3}>{colorPage.coloringTitle}</h3>
-                    <img className={style.createImg} src={colorPage.coloringImage}></img>
+                    <img id="coloring" className={style.createImg} src={colorPage.coloringImage} onClick={() => printImage()}></img>
                 </div>
                 ))}
             </div>
