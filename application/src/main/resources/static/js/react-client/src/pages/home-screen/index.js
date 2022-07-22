@@ -14,17 +14,17 @@ const HomeScreen =()=>{
         <div className={style.heroGridText}>
           <h1>Welcome To JAC</h1>
           <h2>Mystery Educator Learning Portal</h2>
-          <Link to={'/about'}>Learn More</Link>
+          <Link to={'/contact'}>Learn More</Link>
 
         </div>
         <div className={style.heroGridImg}>
-          <img src={kids}></img>
+          <img src={kids} alt={"classroom-kids"}></img>
         </div>
       </section>
 
       <section className={style.nasaSection}>
         <div className={style.nasaGridImg}>
-          <img src={planets}></img>
+          <img src={planets} alt={"space"}></img>
         </div>
         <div className={style.nasaGridText}>
           <h2>Explore Space</h2>
@@ -41,7 +41,7 @@ const HomeScreen =()=>{
           <Link to={'/art'}>Be Inspired!</Link>
         </div>
         <div className={style.artGridImg}>
-          <img src={art}></img>
+          <img src={art} alt={"paint"}></img>
         </div>
       </section>
 

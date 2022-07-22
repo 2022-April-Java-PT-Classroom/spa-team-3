@@ -31,11 +31,11 @@ return (
     <div className={style.ActivityGrid}>
         <section>
             <div className={style.ActivityContainer}>
-                <img className={style.ActivityImg} src={Group}></img>
+                <img className={style.ActivityImg} src={Group} alt={"kids"}></img>
                 <h2>Activity Name: {activity.activity}</h2>
                 <h2>Type: {activity.type}</h2>
                 <h2>Price Point: {activity.price}</h2>
-                <h2>Link:{activity.link}</h2>
+                <h2>Helpful Resources:<a href={activity.link} className={style.ActivityLink}>Click For More</a></h2>
                 <h2>Participants: {activity.participants}</h2>
                 <h2>Key: {activity.key}</h2>
                 <button className={style.ActivityBtn} onClick={() => setActivity(!activity)}>More Activities!</button>

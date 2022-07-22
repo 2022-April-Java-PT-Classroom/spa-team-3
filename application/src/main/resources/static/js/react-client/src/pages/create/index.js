@@ -43,7 +43,7 @@ const Create = () => {
             {colorPages.map(colorPage => (
                 <div key={colorPage.coloringId} className={style.createContainSub}>
                     <h3 className={style.createH3}>{colorPage.coloringTitle}</h3>
-                    <img id="coloring" className={style.createImg} src={colorPage.coloringImage} onClick={() => printImage()}></img>
+                    <img id="coloring" className={style.createImg} src={colorPage.coloringImage} alt={"metpainting"} onClick={() => printImage()}></img>
                 </div>
                 ))}
             </div>

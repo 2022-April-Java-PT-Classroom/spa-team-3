@@ -8,7 +8,7 @@ const Header =()=> {
     return (
         <div className={style.header}>
             <div className={style.nav}>
-            <img src={logo} className={style.logo}></img>
+            <img src={logo} className={style.logo} alt={"logo"}></img>
             <ul className={style.navList}>
                 <NavLink to={'/'}>Home</NavLink>
                 <NavLink to={'/contact'}>Contact</NavLink>

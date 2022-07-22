@@ -46,7 +46,7 @@ const Planet = () => {
             <div className={style.planetGrid}>
             {planets.map(planet => (
             <div className={style.planetInner} key={planet.id}>
-                <img className={style.planetGridImg} src={planet.planetImage}></img>
+                <img className={style.planetGridImg} src={planet.planetImage} alt={"planets"}></img>
                 <h3 className={style.planetInnerH3}>{planet.name}</h3>
                 <h4 className={style.planetInnerH4}>{planet.description}</h4>
             </div>

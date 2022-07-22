@@ -15,7 +15,7 @@ const ContactScreen = ()=>{
     <div className={style.aboutPage}>
       <section className={style.aboutSection}>
         <div className={style.aboutGridImg}>
-          <img src={CompanyImage}></img>
+          <img src={CompanyImage} alt={"building"}></img>
         </div>
         <div className={style.aboutGridText}>
           <h2>JAC Enterprises</h2>
