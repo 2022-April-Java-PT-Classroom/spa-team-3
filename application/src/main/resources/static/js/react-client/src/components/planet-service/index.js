@@ -15,12 +15,12 @@ class PlanetService {
         return axios.get(URL_END_POINT +'/' + planetId);
     }
     updatePlanet(planetId, planet){
-        axios.put(URL_END_POINT + '/' + planetId, planet);
+        return axios.put(URL_END_POINT + '/' + planetId, planet);
 
     }
     
     deletePlanet(planetId){
-        axios.delete(URL_END_POINT +'/' + planetId);
+        return axios.delete(URL_END_POINT +'/' + planetId);
     }
 }
 export default new PlanetService();

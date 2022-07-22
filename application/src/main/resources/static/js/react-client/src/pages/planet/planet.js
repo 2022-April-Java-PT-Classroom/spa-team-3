@@ -38,7 +38,8 @@ const Planet = () => {
 
     
 
-    const deletePlanet = (planetId) => {
+    const removePlanet = (planetId) => {
+    
        PlanetService.deletePlanet(planetId).then((response => {
 
         retrieveAllPlanets();
@@ -86,7 +87,7 @@ const Planet = () => {
                                     <Link to={`/edit-planet/${planet.id}`}> Update</Link>
                                 </td>
                                 <td>
-                                <button className={style.actions} onClick={() =>deletePlanet(planet.id)}>Delete</button>
+                                <button className={style.actions} onClick={() =>removePlanet(planet.id)}>Delete</button>
                                   
                                 </td>
                             </tr>

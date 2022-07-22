@@ -20,7 +20,7 @@ const AddPlanet = () => {
 
         const planet = {name, description, radius}
 
-        history.replace('/planets')
+        //history.replace('/planets')
 
         if(id){
             PlanetService.updatePlanet(id,planet).then((response) => {
