@@ -23,8 +23,29 @@ public class Populator implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        Planet mercury = new Planet("Mercury", "the smallest planet", "1516 mi");
-        planetRepo.save(mercury);
+        // Planets ================================================================================
+
+        Planet planet00 = new Planet("Zibadrameda ", "A bright star over 943 light years away", "1516 mi", "http://localhost:8080/images/planet5.png");
+        Planet planet01 = new Planet("Planet Cliff", "The thunder and lightning planet", "1234 mi", "http://localhost:8080/images/planet1.png");
+        Planet planet02 = new Planet("Alan M17", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "1234 mi", "http://localhost:8080/images/planet2.png");
+        Planet planet03 = new Planet("Jordanopolis", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "1234 mi", "http://localhost:8080/images/planet3.png");
+        Planet planet04 = new Planet("Ursa Kobby", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "1234 mi", "http://localhost:8080/images/planet4.png");
+
+        Planet planet05 = new Planet("Chad II", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "1234 mi", "http://localhost:8080/images/planet5.png");
+        Planet planet06 = new Planet("Pennyaris", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "1234 mi", "http://localhost:8080/images/planet6.png");
+        Planet planet07 = new Planet("Hakan Delta", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "1234 mi", "http://localhost:8080/images/planet7.png");
+        Planet planet08 = new Planet("Noellorian", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "1234 mi", "http://localhost:8080/images/planet3.png");
+
+        planetRepo.save(planet00);
+        planetRepo.save(planet01);
+        planetRepo.save(planet02);
+        planetRepo.save(planet03);
+        planetRepo.save(planet04);
+
+        planetRepo.save(planet05);
+        planetRepo.save(planet06);
+        planetRepo.save(planet07);
+        planetRepo.save(planet08);
 
         // Coloring Pages =========================================================================
 

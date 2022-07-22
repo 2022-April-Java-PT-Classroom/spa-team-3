@@ -5,11 +5,9 @@ import style from "./style.module.scss";
 
 const Header =()=> {
 
-    
     return (
         <div className={style.header}>
             <div className={style.nav}>
-            {/* <h1>Jac's Mystery Educator</h1> */}
             <img src={logo} className={style.logo}></img>
             <ul className={style.navList}>
                 <NavLink to={'/'}>Home</NavLink>
@@ -21,7 +19,6 @@ const Header =()=> {
                 <NavLink to={'/create'}>Create</NavLink>
                 <NavLink to={'/draw'}>Draw</NavLink>
                 <NavLink to={'/activity'}>Activity</NavLink>
-
             </ul>
             </div>
         </div>

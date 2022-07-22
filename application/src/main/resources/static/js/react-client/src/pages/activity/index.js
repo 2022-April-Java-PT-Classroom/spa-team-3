@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-
+import Group from "../../assets/activity.png"
 import Axios from "axios";
 import style from "./style.module.scss";
 
@@ -28,20 +28,21 @@ useEffect(() => {
 
 return ( 
     loading ? <h3>Loading...</h3> :
-    <div>
+    <div className={style.ActivityGrid}>
         <section>
-            <div className={style.ActivityGrid}>
-                <h1>Activity Name: {activity.activity}</h1>
+            <div className={style.ActivityContainer}>
+                <img className={style.ActivityImg} src={Group}></img>
+                <h2>Activity Name: {activity.activity}</h2>
                 <h2>Type: {activity.type}</h2>
-                <h3>Price: {activity.price}</h3>
-                <h4>Link:{activity.link}</h4>
-                <h5>Participants:{activity.participants}</h5>
-                <h6>Key:{activity.key}</h6>
-            
+                <h2>Price Point: {activity.price}</h2>
+                <h2>Link:{activity.link}</h2>
+                <h2>Participants: {activity.participants}</h2>
+                <h2>Key: {activity.key}</h2>
+                <button className={style.ActivityBtn} onClick={() => setActivity(!activity)}>More Activities!</button>
             </div>
      </section>
     </div>
-);
+    );
 }
 
 export default Activity;

@@ -71,9 +71,9 @@ const AddPlanet = () => {
 
     const title = () =>{
         if(id){
-            return <h2>Update Planet</h2>
+            return <h2>Update Your Planet</h2>
         }else {
-            return <h2>Add Planet</h2>
+            return <h2>Add Your Planet</h2>
         }
 
     }
@@ -83,8 +83,6 @@ const AddPlanet = () => {
             
             {title()}
 
-            
-         
             <form className={style.form}>
                 <div className={style.formContainer}>
                 <label htmlFor='name'> Name</label>
