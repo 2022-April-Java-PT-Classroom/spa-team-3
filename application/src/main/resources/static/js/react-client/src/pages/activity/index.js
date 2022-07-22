@@ -11,7 +11,7 @@ const [loading, setLoading] = useState(true);
 useEffect(() => {
     const fetchData = async () => {
 
-        const result = await Axios("http://boredapi.com/api/activity");
+        const result = await Axios("http://www.boredapi.com/api/activity/");
         setActivity(result.data);
     };
 
@@ -32,8 +32,12 @@ return (
         <section>
             <div>
                 <h1>Activity Name: {activity.activity}</h1>
-                <h1>Type: {activity.type}</h1>
-                <h1>Price: {activity.price}</h1>
+                <h2>Type: {activity.type}</h2>
+                <h3>Price: {activity.price}</h3>
+                <h4>Link:{activity.link}</h4>
+                <h5>Participants:{activity.participants}</h5>
+                <h6>Key:{activity.key}</h6>
+            
             </div>
      </section>
     </div>
