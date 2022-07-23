@@ -65,7 +65,7 @@ const AboutScreen = () => {
             <a href="https://www.linkedin.com/in/hakan-celik-84818347/">LinkedIn</a>
             </div>
             
-            <div className={style.card}>
+            {/* <div className={style.card}>
                <h2>Kobby Nkansah</h2>
             <div className={style.container}> 
                <h1><img className={style.Img} src="https://media-exp1.licdn.com/dms/image/C5603AQEFHD5EO5JleQ/profile-displayphoto-shrink_200_200/0/1654033451634?e=1663200000&v=beta&t=1LOl0lSDyfysHcCvSg6IahBDwYDGTJ3k6rCbZYBQHjw" alt="kobbypic"></img>
@@ -74,7 +74,7 @@ const AboutScreen = () => {
               <h4>Full Stack Developer</h4>
             <a href="https://github.com/kobmank">Github</a>
             <a href="https://www.linkedin.com/in/kobby-nkansah-692280218/">LinkedIn</a>
-            </div>
+            </div> */}
             </div>
             </section>
         </div>
