@@ -29,10 +29,10 @@ public class Populator implements CommandLineRunner {
         Planet planet01 = new Planet("Planet Cliff", "The thunder and lightning planet", "1234 mi", "http://localhost:8080/images/planet1.png");
         Planet planet02 = new Planet("Alan M17", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "1234 mi", "http://localhost:8080/images/planet2.png");
         Planet planet03 = new Planet("Jordanopolis", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "1234 mi", "http://localhost:8080/images/planet3.png");
-        Planet planet04 = new Planet("Ursa Kobby", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "1234 mi", "http://localhost:8080/images/planet4.png");
+        Planet planet04 = new Planet("Rings Of Anu", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "1234 mi", "http://localhost:8080/images/planet4.png");
 
         Planet planet05 = new Planet("Chad II", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "1234 mi", "http://localhost:8080/images/planet5.png");
-        Planet planet06 = new Planet("Pennyaris", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "1234 mi", "http://localhost:8080/images/planet6.png");
+        Planet planet06 = new Planet("Ursa Penny", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "1234 mi", "http://localhost:8080/images/planet6.png");
         Planet planet07 = new Planet("Hakan Delta", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "1234 mi", "http://localhost:8080/images/planet7.png");
         Planet planet08 = new Planet("Noellorian", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "1234 mi", "http://localhost:8080/images/planet3.png");
 
